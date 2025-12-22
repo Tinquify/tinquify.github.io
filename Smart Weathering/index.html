@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    *{box-sizing: border-box;}
+
+    /* Containers */
+    .fullwidthContainer {
+        width:100%;
+        /*outline: 3px solid cyan;*/
+    }
+
+    .marginedContainer {
+        margin: 0 6%;
+        /*outline: 3px solid khaki;*/
+    }
+
+    /* Media */
+    .video1 {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .juxtaposeCustomContainer {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+    }
+
+    .juxtaposeCustomContainer .juxtaposeCustom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .juxtaposeCustom #juxtapose-embed{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /*.juxtaposeCustom #juxtapose-embed{
+        width: 100%;
+    }*/
+
+
+    .borderRadiusRight {
+        border-radius: 0 20px 20px 0;
+    }
+
+    .borderRadiusLeft {
+        border-radius: 20px 0 0 20px;
+    }
+
+
+    /* Text */
+
+    h2 {
+        text-align: center;
+    }
+    h3, h4, h5, p, ul, h2 {
+        font-family: sans-serif;
+        color: #0D4768;
+    }
+
+    p{
+        margin: 20px 0;
+    }
+
+    h2{
+        margin: 40px 0;
+    }
+
+    h3, h4, h5, h6 {
+        margin: 20px 0;
+    }
+
+    a{
+        color: #FF8C39;
+    }
+
+
+     
+    /* Style */
+
+    .mediaSideModule{
+        display: flex;
+        justify-content: space-between;            
+        align-items: center;
+    }
+    
+    .mediaSide {
+        width: 59%;
+        /*display: inline-block;
+        vertical-align: middle;*/
+        overflow: hidden;
+    }
+
+    .textSide {
+        width: 39%;
+        font-size: 75% !important;
+        /*display: inline-block;
+        vertical-align: middle;*/
+        padding: 20px 2%;
+        /*outline: 3px solid orange;*/
+    }
+
+    .backgroundLightBlue {
+        background-color: #F1F6F9;
+    }
+
+    .backgroundDarkBlue {
+        background: linear-gradient(135deg, #0D4768,#072435);
+    }
+
+    .textLight p, .textLight h1, .textLight h2, .textLight h3, .textLight h4, .textLight h5, .textLight ul{
+        color: white;
+    }
+
+    .textGradient {
+        color: #FF8C39 !important;
+    }
+
+    .extraPadding {     
+        padding: 5%;
+    }
+
+    
+    .extraPaddingHeight {     
+        padding: 30px 0;
+    }
+
+    .whiteCard {
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .emptySeparator {
+        height: 40px;
+    }
+    .emptySeparator2 {
+        height: 80px;
+    }
+
+    .lineGradientSeparator {
+        width: 200px;        
+        height: 10px;
+        background: linear-gradient(45deg, #FF8C39, #FF3939);
+        border-radius: 20px;
+        margin: 40px auto;        
+    }
+
+    .borderGradient1{
+        border: 8px solid blue;
+        border-radius: 20px;
+        border: double 8px transparent;
+        background-image: linear-gradient(#0D4768,#072435), linear-gradient(90deg, #FF8C39,#FF3939);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        overflow: hidden;
+    }
+
+    /*.borderGradient2{
+        border: 8px solid blue;
+        border-radius: 20px;
+        border: 8px double transparent;
+        background-image: linear-gradient(white,white), linear-gradient(90deg, #FF8C39,#FF3939);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        overflow: hidden;
+    }*/
+
+    .borderGradient2{
+        background-image: linear-gradient(90deg, #FF8C39,#FF3939);
+        border-radius: 28px;
+        overflow: hidden;
+        padding: 8px;
+    }
+
+
+
+    /* Unused */
+
+    /* Unused */
+
+    </style>
+
+    
+
+</head>
+
+
+
+<body>
+    <div class="fullwidthContainer"> <!-- Gigacontainer -->
+        <div class="marginedContainer extraPaddingHeight"> <!-- Container 1-->
+            <div>
+                <video src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20SW%20-%20Presentation%20-%20Intro%201%20(1en1)%20optimized%20-%203d92b.mp4" class="video1" autoplay loop muted></video>
+
+                <!--
+                <div class="borderGradient2">
+                    <p>Have you noticed that everything that surrounds us is imperfect? Have you appreciated the beauty of the “perfect imperfection”?</p>
+                </div>
+                
+                Just a test
+                -->
+
+                <div class="emptySeparator"></div>
+
+                <h2>Our products</h2>
+
+                <div class="lineGradientSeparator"></div>
+
+                <div>
+                <a href="https://blendermarket.com/products/proterials" target="_blank"><img src="https://tinquify.com/media/Tinquify%20-%20Redirection%20Banner%20-%20Proterials%20-%20d05b5.jpg" class="video1" alt=""></a>
+                </div>
+
+                <div style="height: 15px;"></div>
+
+                <div class="borderGradient2">
+                <a href="#"><img src="https://tinquify.com/media/Tinquify%20-%20Redirection%20Banner%20-%20Smart%20Weathering%20-%20dbef4.jpg" class="video1" alt=""></a>
+                </div>
+
+                <div style="height: 15px;"></div>
+
+                <div>
+                <a href="https://blendermarket.com/products/ethereal-skies-hq-sky-hdris-mix-collection-pack-01" target="_blank"><img src="https://tinquify.com/media/Tinquify%20-%20Redirection%20Banner%20-%20Etheral%20Skies%20-%20c9594.jpg" class="video1" alt=""></a>
+                </div>
+
+
+                <div class="emptySeparator"></div>
+                
+                <h2>Introduction</h2>
+
+                <div class="lineGradientSeparator"></div>
+
+                <p>
+                    Have you noticed that everything that surrounds us is imperfect? Have you appreciated the beauty of the “perfect imperfection”?
+                </p>
+                <p>
+                    <b>Imperfections are part of our world, and their random nature, from subtleties to exaggerations, is what makes everything unique.</b>
+                </p>
+                <p>
+                    In the CG world, we have the possibility to recreate everything! <b>However, creating these effects is overwhelming</b> as either you don’t know how to properly do it because you are just starting in the 3D universe, or you know good enough that to create such effects you will need to spend quite a lot of hours doing the whole actual process and trying and failing (x many times) until you achieve your desired look. And then, repeat the process in the next project.
+                </p>
+                <p>
+                    <b>But what if you can do it with just the magic of a slider? Or even better, without UV mapping or baking!</b>
+                </p>
+                <p>
+                    <b>After years</b> of facing this situation and working <b>on many projects where we spent hours</b> doing these effects, we wanted to create and bring you <b>the ultimate solution.</b>
+                </p>
+                <p>
+                    <b>“Smart Weathering” will let you add weathering effects to your shaders</b> to add those imperfections that make a render more realistic, <b>and add extra level of detail with Geometry nodes effects!</b>
+                </p>
+                <p>
+                    <b>A very intuitive, compact, powerful, and versatile solution loaded with the most usual weathering effects to let you focus on the artistic aspect of your project and save a lot of time!</b>
+                </p>
+                <p>
+                    No more excuses to keep postponing that old project you had in your mind anymore! (?
+                </p>
+
+                <div class="emptySeparator"></div>
+            </div>
+
+            
+
+            <!-- Promotion label
+            
+            <div id="offer">
+                <div class="textLight borderGradient2">
+                    <div class="extraPadding backgroundDarkBlue" style="border-radius: 20px; overflow: hidden;">
+
+                        <h2 style="margin: 0">Flash sale!</h2>
+
+                        <div class="lineGradientSeparator" style="margin: 20px auto"></div>
+
+                        <h2 style="margin: 20px 0"><span class="textGradient">25% Off</span> for a <span class="textGradient">week!</span></h2>
+
+                        <p style="text-align: center; margin: 0;">Use the code</p>
+
+                        <h2 class="textGradient" style="text-align: center; margin: 0;">sw25off</h2>
+
+                        <p  style="text-align: center; margin: 0;">when purchasing and you will get the discount.</p>
+
+                        <p style="text-align: center; font-size: .8em; color: rgb(153, 174, 202)"><i>The offer will be from 19/07 to 27/07.</i></p>
+                    </div>
+                </div>
+            </div>-->
+            
+            
+            <div class="emptySeparator"></div>
+            
+            
+            <div class="emptySeparator"></div>
+
+            <div style="text-align: center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RjW0L0_98k0?si=iZV2CoHkS02AQ4Rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BPGhDJHCbOE?si=20-xICw_X31PE76m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/G_Dl6Ti-o6Y?si=NoKMxt4EyTKHI1m4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/83cwC6POAW8?si=jBo2gszh7hkwqTZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4kGsnS-bVno?si=DLypwb4oR8l818HD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+            </div>        
+            
+            
+            <div class="emptySeparator"></div>
+
+        </div>
+        <div class="backgroundLightBlue">
+
+            <div class="marginedContainer extraPaddingHeight">
+
+                
+                <div class="emptySeparator"></div>
+
+                <h2>Features</h2>
+
+                <div class="lineGradientSeparator"></div>
+
+                <div class="emptySeparator"></div>
+
+                <h2>Weatherize everything in a couple of seconds!</h2>
+                
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Tutorial%20-%20Advanced%20masking%201%20(edited%201)%20-%20ee9c0.gif" class="video1" alt="">
+                
+
+                <p>Boost anything of your current scene. <b>“Smart Weathering” tool will let you add an extensive amount of effects carefully created.</b></p>
+                <p><b>It mainly started as a shader effect but we are now experimenting with geometry nodes and other add-on tools that will enhance your workflow.</b></p>
+                <p><b>Apply effects ranging from very exaggerated ones</b> like dirt and scratches on the edges <b>to more subtle ones</b> like fingerprints, smudges, wetness, and dust!</p>
+                <p><b>Give a backstory to your projects in a matter of seconds!</b></p>
+                <p><b>Easily create new texturing styles and explore many more design iterations in much less time.</b></p>
+                <p>Just play with intuitive sliders and the effects will adapt to the shape, size, and rotation of your object and create a unique procedural output.</p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h2>Easy and intuitive</h2>
+
+
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20SW%20-%20Base%20shader%201%20-%208bebf.jpg" class="video1" alt="">
+
+                <p><b>Designed to be as simple as possible.</b></p>
+                <p>This tool has been designed for you to <b>only concentrate on the artistic side of your project.</b></p>
+                <p><b>Beginners and advanced users will really enjoy using this solution. You will not need to spend more time doing complicated shader setups!</b></p>
+                <p>You will need to simply click on “Add” and <b>a single node with intuitive sliders will pop up.</b> This <b>single and powerful nodegroup is all that is needed.</b></p>
+                <p><b>There are no complicated terms to understand.</b> Parameters are named as intuitive as possible and are organized in sections.</p>
+                <p><b>You will have great add-on utilities at your fingertips to easily add it</b> to your base shader, <b>remove it from them, copy and paste setups, hide and show it, or isolate it. This will facilitate the workflow even more.</b></p>
+                <p><b>Also, our custom node UI</b> will let you <b>easily see and enable effects, randomize them, and show the effects masks</b> to focus your work on.</p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h2>Smart and instant feedback workflow.<br>No UVs or baking needed!</h2>
+
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Modeling%20Smart%20shader%20adapts%20(edited)%202%20-%209673c.gif" class="video1" alt="">
+
+                <p><b>Current texturing methods require a lot of time</b> and steps to move from the modeling to the texturing phase of your project. Normally, you would need at least a few hours to start texturing your model.</p>
+                <p>And that is hoping that “there will not be any more modifications to the model” (something we know that it is almost never the case…)</p>
+                <p>Sounds like magic, doesn’t it? <b>Smart Weathering takes advantage of a series of information about the object (Procedural nodes, Objects’ size and Cavities, and so on)</b> and applies the procedurally generated textures without the need for UVs.</p>
+                <p><b>You will be able to see the texturing result as you are modeling!</b> This lets you have an <b>extremely smooth workflow</b> as it updates in real-time. If you make changes to your model the effects will readapt to them. </p>
+                <p><b>No need to redo any baking process or rework the UVs.</b></p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h2>Non-destructive workflow</h2>
+
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Addon%20-%20Interact%20-%20Show%20and%20Hide%201%20(5x)%20-%2002921.gif" class="video1" alt="">
+                
+                <p>Smart Weathering will let you <b>add single or multiple layered effects in a non-destructive manner.</b></p>
+                <p>All the effects are completely separated from your base shader. This workflow will let you <b>keep your base shader intact</b> and explore different artistic style iterations without the need to worry about your previous material setup.</p>
+                <p><b>At any point</b>, if the effect is not going as desired, <b>you will be able to separate the Smart Weathering effects pass</b> and go back to your base shader, start playing again with the default values, or use your saved presets.</p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h2>Versatile</h2>
+                
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Versatility%201%20-%20b44f3.gif" class="video1" alt="">
+
+                <p><b>From subtle effects to very worn materials. And from little objects to large-scale ones.</b></p>
+                <p><b>You will have a wide variety of very common-use effects</b> selected for you to play with. Check the list of examples below to see it in more detail.</p>
+                <p>Each of them was <b>carefully created using all the experience we gained through the years</b> to let you play with the sliders without the need for you to worry about the technical aspect.</p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h2>Realistic and performance balance</h2>
+                
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Realism%20and%20performance%201%20-%200bd06.gif" class="video1" alt="">
+                
+                <p>There are many that offer procedural materials, but <b>we ensure to make them the most realistic and have the best performance at the same time.</b></p>
+                <p>All the effects were created as light as possible to have maximum efficiency.</p>
+                <p><b>And you will not need to guess values.</b> The effects are created using real-world measurements as references for the different effects such as the size of a dust particle, the diameter of a fingerprint, the size of a water drop, and so on.</p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h2>Manual tweaking</h2>
+                <p><b>Hand-paint the details you want to complement the procedural effects created.</b> An unwrapped 3d model will be needed for this option to work.</p>
+                
+                <div class="emptySeparator"></div>
+
+                <div class="textLight borderGradient2">
+                    <div class="extraPadding backgroundDarkBlue" style="border-radius: 20px; overflow: hidden;">
+
+                        <h2>100% Procedural effects!</h2>
+
+                        <div class="lineGradientSeparator"></div>
+
+                        <p><b>As these effects are created procedurally, this implies a list of many benefits.</b> Here are some of the highlights:</p>
+
+                        <div class="emptySeparator"></div>
+    
+                        <!-- Subparts start here-->
+                        <h3 class="textGradient">Extremely efficient workflow</h3>
+    
+                        <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Unique%20seed%20(edited)%202%20-%20da450.gif" class="video1" alt="">
+    
+                        <p><b>A single material will output multiple visual results per object.</b> This is because a unique SW seed will be created for each object. </p>
+                        <p>Yes, <b>no matter if they share the same material or even if they are instanced.</b></p>
+                        <p>You can have an <b>unbeatable efficient workflow.</b></p>
+
+                        <div class="emptySeparator"></div>
+    
+    
+                        <h3 class="textGradient">Fine-tuning</h3>
+    
+                        <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Node%20sections%201%20-%204c414.gif" class="video1" alt="">
+    
+                        <p><b>No need to spend time looking for the right texture to use.</b></p>
+                        <p><b>You will have an extreme amount of control over the weathering</b> produced by just playing with a few sliders.</p>
+                        <p><b>There is no chance to set the effects “wrong”. The default values of the effects will give you a realistic output, you don’t need to touch every slider to get the look you need (usually it is a matter of a few ones)</b> and any value of the sliders will give you a realistic result. <b>It is only a matter of taste!</b></p>
+                        <p>Almost all the sliders are meant to be used by just sliding them from 0 to 1. The different values in between will just make the effect change progressively.</p>
+
+                        <div class="emptySeparator"></div>
+    
+                        <h3 class="textGradient">Infinite resolution and no tiling issues</h3>
+                        <p><b>Textures are great but you may have to deal with tiling issues or their resolution may not be enough.</b></p>
+                        <p>This is not the case for procedural setups like ours.</p>
+
+                        <div class="emptySeparator"></div>
+    
+                        <h3 class="textGradient">Animatable effects</h3>
+                        <p>Each effect contained in the setup can be animated as you can see in our video!</p>
+                        <p>This is something that would be very difficult (or even impossible) to achieve with current texturing methods.</p>
+
+                        <div class="emptySeparator"></div>
+    
+                        <h3 class="textGradient">Limitless output possibilities</h3>
+                        <p>With a large amount of parameters, the combinations are limitless.</p>
+
+                        <div class="emptySeparator"></div>
+    
+                        <h3 class="textGradient">Light setup</h3>
+                        <p>Lighter file size and less memory consumption.</p>
+                        <p>SW node is much lighter (just a few MB instead of all the 4k or 8k textures that can be a couple of hundreds of MB per set).</p>
+
+                        <div class="emptySeparator"></div>
+                    </div>
+                </div>
+                
+
+                <div class="emptySeparator"></div>
+            </div>
+
+        </div>
+        <div>
+
+
+            <div class="marginedContainer extraPaddingHeight">
+
+                <div class="emptySeparator"></div>
+
+                <h2>Add-on utilities</h2>
+
+                <div class="lineGradientSeparator"></div>                        
+
+                <p>Here you can see some of the main features our addon has</p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h3>Select, add & remove, and show & hide with ease</h3>
+
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Addon%20-%20Interact%20-%20Add%20to%20selection%201%20(5x)%20-%202e915.gif" class="video1" alt="">
+
+                <p>Select the objects you want to apply to it with a set of convenient tools, and then apply the SW layer or remove it with a few clicks.</p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h3>Easily copy your effects to other materials</h3>  
+                
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Addon%20-%20Interact%20-%20Copy%20and%20paste%20to%20selection%201%20(5x)%20-%201645b.gif" class="video1" alt="">         
+                
+                <p><b>Save a lot of time copying & pasting, or saving with presets.</b></p>
+                <p>Usually, <b>getting the desired look procedurally takes quite a lot of time</b> of experimentation and high technical skill. And doing it for each project is even a lot more. </p>
+                <p>Even though you can replicate the same effect that we are offering you in this setup, <b>it is practically a nightmare when you want to copy these effects you created</b> to a new shader setup you have.</p>
+                <p>However, <b>with our node setup, you will achieve this by just pressing literally two buttons.</b></p>
+                <p>You will <b>not need to replicate effects</b> again for each material. Once you get the desired look, you will be able to easily copy it and paste it to other shaders, or reuse it.</p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h3>Handy UI</h3>
+
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Node%20UI%201%20-%20e54e0.gif" class="video1" alt="">
+
+                <p>Get a view of the SW sliders in a convenient interface that will let you easily <b>see which effects are applied, randomize them, and see their mask.</b></p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h3>Presets</h3>
+
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Presets%20save%20and%20apply%201%20-%20e4569.gif" class="video1" alt="">
+
+                <p><b>Save the combinations</b> of the Smart Weathering node that you like the most to reuse them in different projects, to share with your SW friend, or maybe even sell them.</p>
+                <p>Powered with a <b>preview and filtering system</b> that will let you find the combination that will suit better in your next creation.</p>
+
+                <div class="emptySeparator"></div>
+
+
+                <h3>Baking for SW masks (Beta)</h3>
+
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Baking%20maps%201%20-%20996c9.gif" class="video1" alt="">
+
+                <p><b>Improve performance with a baking masks solution.</b> This will reduce a lot of the computing power needed, and also it will work better with things like moving objects.</p>
+                <p><b>Our solution works for SW itself</b>, to lighten the procedural computation of certain maps/masks once you are ok with the effects results.</p>
+                <p><b>You will be able to configure many relative settings</b>, such as the resolution, samples, using GPU or CPU among others.</p>
+                <p>The process will create unique maps for each material, that you can rebake at any time if you make changes on the procedural setup.</p>
+                <p><b>It is important to let you know that our baking solution doesn’t provide PBR bakes yet.</b> We are planning to add it but it is not a certainty. However, <b>there are great add-ons from other developers that will let you do PBR bakes</b> if you need to export them. Take a look at our documentation or at the end of this product description to know which are our recommended PBR bakers.</p>
+
+
+            </div>
+        </div>
+
+                
+        <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Graphic%20-%20BM%20-%20Misc%201%20-%20cff37.png" class="fullwidthContainer" width="100%" alt="">
+
+        <div class="fullwidthContainer backgroundDarkBlue textLight" style="padding: 40px 0"> <!-- Container 2-->
+            <h2>Effects included</h2>
+
+            <div class="lineGradientSeparator"></div>
+
+            <div class="marginedContainer" style="text-align: center;"><h3>SW Shader effects</h3></div>
+
+            <div class="emptySeparator"></div>
+            
+            
+            <div class="mediaSideModule"> <!-- Media side module-->
+                <div class="mediaSide borderRadiusRight">
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Worn%201%20(7x)%20-%20cab12.gif" class="fullwidthContainer" alt="">
+                </div>
+                <div class="textSide">
+                    <p class="textGradient">Worn</p>
+                    <p>Worn is one of the most complete effects sections. It has many subsections like Bubbles, Cracks, Top Corrosion, Rust, Drippings, Scratches, and chipped paint on the edges.</p>
+                    <!--<p>Worn is one of the most complete effects sections. It is a set of effects that will simulate the wearing of the object material.</p>
+                    <p>It is so big that it has many subsections like Bubbles, Cracks, Top Corrosion, Rust, Drippings, Scratches, and chipped paint on the edges.</p>-->
+                </div>
+            </div>
+
+            <div class="emptySeparator2"></div>
+
+            <div class="mediaSideModule"> <!-- Media side module-->
+                <div class="textSide">
+                    <p class="textGradient">Dirt</p>
+                    <p>Add dirt to cavities and edges, randomly over the surface, and deposit it from the top or splat it from the bottom.</p>
+                </div>
+                <div class="mediaSide borderRadiusLeft">
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Dirt%201%20(7x)%20-%20cb66a.gif" class="fullwidthContainer" alt="">
+                </div>
+            </div>
+
+            <div class="emptySeparator2"></div>
+
+            <div class="mediaSideModule"> <!-- Media side module-->
+                <div class="mediaSide borderRadiusRight">
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Smudgeness%201%20(5x)%20-%201d537.gif" class="fullwidthContainer" alt="">
+                </div>
+                <div class="textSide">
+                    <p class="textGradient">Smudgeness</p>
+                    <p>Add the amount of Fingerprints, Smudges, Grunge, Swirls and micro scratches you need!</p>
+                </div>
+            </div>
+
+            <div class="emptySeparator2"></div>
+
+            <div class="mediaSideModule"> <!-- Media side module-->
+                <div class="textSide">
+                    <p class="textGradient">Splashes</p>
+                    <p>Create paint / liquid splashes that spread randomly over the surface.</p>
+                </div>
+                <div class="mediaSide borderRadiusLeft">
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Splashes%201%20(5x)%20-%202c9f9.gif" class="fullwidthContainer" alt="">
+                </div>
+            </div>
+            
+            <!---->
+
+            <div class="emptySeparator2"></div>
+
+            <div class="mediaSideModule"> <!-- Media side module-->
+                <div class="mediaSide borderRadiusRight">
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Dust%201%20(5x)%20-%2004fe6.gif" class="fullwidthContainer" alt="">
+                </div>
+                <div class="textSide">
+                    <p class="textGradient">Dust</p>
+                    <p>Add a microscopically detailed layer of dust over your objects. It also interacts with Smudgeness fingerprints (as it does in reality) with its corresponding slider (shown below).</p>
+                </div>
+            </div>
+
+            <div class="emptySeparator2"></div>
+
+            <div class="mediaSideModule"> <!-- Media side module-->
+                <div class="textSide">
+                    <p class="textGradient">Custom effects</p>
+                    <p>A space for you to add your effect in this position in the SW effects chain. The advantage is that it already has some useful masks built in.</p>
+                </div>
+                <div class="mediaSide borderRadiusLeft">
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Custom%20Effect%201%20(4x)%20-%2033fc4.gif" class="fullwidthContainer" alt="">
+                </div>
+            </div>
+
+            <div class="emptySeparator2"></div>
+
+            <div class="mediaSideModule"> <!-- Media side module-->
+                <div class="mediaSide borderRadiusRight">
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Wetness%201%20(7x)%20-%20152a4.gif" class="fullwidthContainer" alt="">
+                </div>
+                <div class="textSide">
+                    <p class="textGradient">Wetness</p>
+                    <p>Effects from the water element like static or moving water drops, condensation, puddles, oiliness, or drippings! In a wet or even dry version of them.</p>
+                </div>
+            </div>
+
+            <div class="emptySeparator2"></div>
+
+            <div class="mediaSideModule"> <!-- Media side module-->
+                <div class="textSide">
+                    <p class="textGradient">Heat</p>
+                    <p>Feel the incandescent heat of an object. Specially created to simulate burnt objects. </p>
+                </div>
+                <div class="mediaSide borderRadiusLeft">
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Heat%202%20(5x)%20-%20ddeba.gif" class="fullwidthContainer" alt="">
+                </div>
+            </div>
+
+            <div class="emptySeparator2"></div>
+
+            <div class="mediaSideModule"> <!-- Media side module-->
+                <div class="mediaSide borderRadiusRight">
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Fire%20and%20also%20Heat%20interaction%201%20(5x)%20-%20666c0.gif" class="fullwidthContainer" alt="">
+                </div>
+                <div class="textSide">
+                    <p class="textGradient">Fire</p>
+                    <p>Show how fire affects the objects. Useful effect when combined with the new Fire geometry nodes we added. Make them vanish, look burnt, or reveal a custom shader.</p>
+                </div>
+            </div>
+
+            <div class="emptySeparator2"></div>
+
+            <div class="marginedContainer">
+                <div>
+                    <h4>Common properties shared among effects</h4>
+                    <p>Each effect has many sub-parameter effects such as masking variations, intensity, custom color, roughness, top/bottom object masks, and so on. And some effects interact with each other.</p>
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Interaction%20Smudgeness%20and%20dust%201%20(5x)%20-%206f267.gif" class="video1" alt="">
+                </div>
+            </div>
+            <div class="marginedContainer">
+
+                <div class="emptySeparator2"></div>
+
+                <h2 style="text-align: center">SW Geometry nodes</h2>
+
+                <div class="lineGradientSeparator"></div>
+
+                <div class="emptySeparator"></div>
+
+                <div>
+                    <h3 class="textGradient" style="text-align: center">Water drops</h3>
+                    <p><b>Add static water drops</b>, from different sizes, randomly spread, control overlapping, and more, <b>or also create moving water drops</b> easily with a few controllers.</p>
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Water%20drops%202%20-%209a35c.gif" class="video1" alt="">
+                </div>
+
+                <div class="emptySeparator"></div>
+
+                <div>
+                    <h3 class="textGradient" style="text-align: center">Fire</h3>
+                    <p><b>See things burning dynamically adjusting the base shader as the fire progresses.</b> This will let you create small flames to big fires. This effect also includes smoke and hot air simulations.</p>
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Fire%204%20-%20f4785.gif" class="video1" alt="">
+                </div>
+
+                <div class="emptySeparator"></div>
+
+                <div>
+                    <h3 class="textGradient" style="text-align: center">Snow</h3>
+                    <p><b>Feel the “hoth” with the snow nodes!</b> Set a whole collection under heavy snow weather that accumulated dynamically over the top surface of the objects.</p>
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Snow%20-%20d128a.gif" class="video1" alt="">
+                </div>
+
+                <div class="emptySeparator"></div>
+
+                <div>
+                    <h3 class="textGradient" style="text-align: center">Dust</h3>
+                    <p><b>Add microscopic geometry dust particles</b> to make the scene more believable.</p>
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Dust%202%20-%20c705c.gif" class="video1" alt="">
+                </div>
+
+                <div class="emptySeparator"></div>
+
+                <h3>Geometry nodes features</h3>
+
+                <div class="emptySeparator"></div>
+
+                <div>
+                    <h4>Optimized</h4>
+                    <p><b>All of these effects are optimized as much as possible.</b> From density and subdivision parameters to advanced culling techniques.</p>
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Culling%20performance%204%20(5x)%20-%20bef01.gif" class="video1" alt="">
+
+                    <div class="emptySeparator"></div>
+
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Assets%20-%20Geo%20-%20Snow%20-%20Performance%20-%20Culling%20-%20Vertex%20group%201%20(7x)%20-%20361d3.gif" class="video1" alt="">
+                </div>
+
+                <div class="emptySeparator"></div>
+
+                <div>
+                    <h4>Detailed and Dynamic</h4>
+                    <p>Each of them is set to be as versatile as possible and <b>will adapt to different objects’ shapes and orientations.</b></p>
+                    <p><b>Created to get good shots up to almost close-ups but adjustable enough to make your scene have better performance if you need to.</b></p>
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Water%20drops%203%20(3x)%20-%2032edc.gif" class="video1" alt="">
+
+                    <div class="emptySeparator"></div>
+                    <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Assets%20-%20Geo%20-%20Snow%20-%20Presentation%202%20(7x)%20-%2018ba2.gif" class="video1" alt="">
+                </div>
+
+                <div class="emptySeparator"></div>
+
+                <div>
+                    <h4>Carefully created</h4>
+                    <p><b>Also, you will get custom materials</b> created specifically for these geometry nodes to work. Water, Fire, Hot Air. Smoke, Snow, and Dust.</p>
+                    <div class="juxtaposeCustomContainer">
+                        <iframe frameborder="0" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=744cc996-0976-11ef-9396-d93975fe8866" class="juxtaposeCustom" scrolling="no"></iframe>
+                    </div>
+                </div>
+
+                <div class="emptySeparator"></div>
+
+
+
+
+            </div>
+
+
+        </div> 
+        <div class="marginedContainer extraPaddingHeight"> <!-- Container 3-->
+                <h2>Get free updates!</h2>
+
+                <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Demo%20-%20Updates%20and%20rework%202%20-%20bd314.gif" class="video1" alt="">
+
+                <p>Buying this tool will give you access to future updates from new features to optimizations.</p>
+                <p>We may provide future updates and help you with support. However, we have to say that we are not obligated to provide maintenance, technical support, error corrections, or updates that will ensure a "perpetual" development of the tool.</p>
+                <p>Big structural changes may naturally be considered as a different product that may be charged as a paid update for the sake of keeping the project running. However, it is worth noting that from version 1 to 3 all the updates were free of charge and we want to keep it this way as long as we can.</p>
+
+                <div class="emptySeparator"></div>
+
+            
+                <h2>🧡 Blender Foundation support!</h2>
+
+                <p>Part of this product's value is donated to the Blender Foundation!</p>
+
+                <div class="emptySeparator"></div>
+                
+                <h2>What users say about SW!</h2>
+                
+                <div class="borderGradient2">   
+                    <img src="https://tinquify.com/media/Smart%20Weathering%202.1.0%20-%20Presentation%203%20F%20-%20f80dd.jpg" width="100%" alt="" style="border-radius: 20px; overflow: hidden;">
+                </div>
+
+        </div>
+        <div class="backgroundLightBlue">
+
+            <div class="marginedContainer extraPaddingHeight">
+                <h2>More information</h2>
+
+                <div class="lineGradientSeparator"></div>
+
+                <div class="extraPadding whiteCard">
+                    <h3 class="textGradient">What do I get with it?</h3>
+                    <p>To understand it simply you will get:</p>
+                    <ul>
+                        <li>
+                            <b>SW nodegroup shader</b> packed with all the effects:
+                            <ul>
+                                <li>
+                                    Worn, Smudgeness, Dirt, Splashes, Custom Effect, Dust, Wetness, Fire, Heat.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Geometry nodes assets.</b>
+                            <ul>
+                                <li>
+                                    Fire (Flames, Hot Air and Smoke), Snow, Water drops, and Dust.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Addon</b> with all the utilities.
+                        </li>
+                    </ul>    
+                </div>
+
+                <div class="emptySeparator"></div>
+
+                <div class="extraPadding whiteCard">
+                    <h3 class="textGradient">Who can benefit from this?</h3>
+                    <p><b>Well, everyone who needs to add some weathering</b> to their 3D object, and simply wants to do it <b>efficiently and have great control to get the desired output.</b> Some of the most notable professionals that will take advantage of it are:</p>
+                    <ul>
+                        <li>
+                            Concept art artists
+                        </li>
+                        <li>
+                            Texturing artists
+                        </li>
+                        <li>
+                            Asset artists
+                        </li>
+                        <li>
+                            Videogame developers
+                        </li>
+                        <li>
+                            Architectural renderer
+                        </li>
+                        <li>
+                            Industrial designers
+                        </li>
+                        <li>
+                            Multimedia designers
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="emptySeparator"></div>
+
+                <div class="extraPadding whiteCard">
+                    <h3 class="textGradient">What is the difference between the price tags?</h3>
+                    <p><b>We want to be really sincere with you.</b></p>
+                    <p>We are a small studio and we know that not everybody has Pixar’s budget.</p>
+                    <p>That is why we decided that <b>the best way to offer this product and be fair to everybody is by splitting it by ranges.</b></p>
+                    <ul>
+                        <li>
+                            Indie
+                            <ul>
+                                <li>
+                                    For <b>individuals and small studios</b> with revenue up to <b>USD25k/year.</b>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Pro
+                            <ul>
+                                <li>
+                                    For <b>professionals and studios</b> with revenue between <b>USD25k/year and USD250k/year, and for 10 seats.</b>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Company
+                            <ul>
+                                <li>
+                                    For <b>businesses</b> with revenue between <b>USD250k/year and USD1M/year, and for 20 seats.</b>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Enterprise
+                            <ul>
+                                <li>
+                                    For <b>businesses</b> with revenue exceeding <b>USD1M/year,  and for 50 seats within a single studio or division.</b>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p><b>To be clear:</b></p>
+                    <ul>
+                        <li>
+                            <b>There are no differences</b> either in terms of quality (you will receive the same product) or in terms of license type for the different price tiers.
+                        </li>
+                        <li>
+                            <b>The revenue and seats are meant to be considered as orientation when deciding.</b>
+                            <ul>
+                                <li>
+                                    The software is not locked by seats, it is just a suggestion from us to be fair with everybody.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            In short, after your purchase, you will be able to have a <b>commercial license</b> of the product that has the following features:
+                            <ul>
+                                <li>
+                                    Royalty-free
+                                </li>
+                                <li>
+                                    No seats limitation (only suggested)
+                                </li>
+                                <li>
+                                    No time usage limitation
+                                </li>
+                                <li>
+                                    No media reproduction limitation
+                                </li>
+                                <li>
+                                    Access to free updates
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>This is a simplified version of the detailed terms outlined in the product's license agreement. You can see the license of the royalty-free assets <a href="https://tinquify.com/media/Tinquify%20-%20License%20-%20Digital%20Assets%20-%204ca5f.pdf" target="_blank">here</a> and the license that corresponds to the GNU GPL assets <a href="https://tinquify.com/media/Tinquify%20-%20License%20-%20Blender%20Assets%20-%200af2a.pdf" target="_blank">here</a>. Make sure to read them before buying the product.</p>
+
+                    <!-- Add license links here-->
+
+                    <p>Some cases that could guide you in choosing the tier are:</p>
+                        <ul>
+                            <li>
+                                If you have a <b>mini studio with some friends</b> and you are all earning less than USD25k in total per year the “Indie” tier is ok.
+                            </li>
+                            <li>
+                                If you are <b>working for a company</b> and your salary is above USD25k per year then it would be very kind if you consider buying the “Pro” tier or maybe buying the “Freelancer” tier more than once to be supportive.
+                            </li>
+                            <li>
+                                If you are a <b>studio</b> that earns more than USD25k and less than USD250k per year and has 3-5 employees you should get the “Pro” tier.
+                            </li>
+                            <li>
+                                If you are a <b>company</b> that earns more than USD250K and less than USD1M per year and has 50 employees you should get the “Company” tier and purchase it at least 3 times to cover the amount of suggested seats.
+                            </li>
+                            <li>
+                                If your <b>company</b> earns more than USD 1M per year, we recommend choosing the “Enterprise” tier, or contacting us for guidance on the most suitable option for your organization.
+                            </li>
+                        </ul>
+                    <p>We hope you understand that, we set the price at the lowest we believe it can be affordable for those different tiers and fair for our work/effort.</p>
+                    <p><b>It is a matter of common sense</b> that the people who can benefit the most from it can support us in the same way they are getting benefited. If a big company has access to the addon at the same price a small freelancer does it would be a very unfair scenario.</p>
+                    <br>
+                    <p>We also have to mention that it would be nice if you consider purchasing the product again just for the sake of support. That would be greatly appreciated to keep the project running.</p>
+                    <br>
+                    <p><b>To sum up, the decision of which "price tag" to choose relies absolutely upon you, and we decided to trust you!</b></p>
+                </div>
+                
+                <div class="emptySeparator"></div>
+                
+                <div class="extraPadding whiteCard">
+                    <p>For more information please visit our <a href="https://blendermarket.com/products/smart-weathering/faq">FAQ</a> section.</p>
+                </div>
+
+            </div>
+            
+
+            <div class="emptySeparator"></div>
+
+        </div>
+        <div>
+
+
+            <div class="marginedContainer extraPaddingHeight">
+
+                <div class="emptySeparator"></div>
+
+                <h2>Documentation</h2>
+
+                <div class="lineGradientSeparator"></div>
+
+                <p>Along with the assets <b>we have created an exhaustive documentation</b> of all the things you need to know about our addon. </p>
+                <p>Covering the basics and first steps, it has descriptions of all the important parameters with gifs showing the effect, and a whole wiki with lots of tips that we want to share with you to let you get the most out of it.</p>
+                <p><b>Take a look at it <a href="https://www.notion.so/tinquify/Smart-Weathering-Portal-39ec7b99709b428a894f275c925d0db5" target="_blank">here</a>.</b> Also, you can check our <a href="https://www.youtube.com/@Tinquify" target="_blank">YouTube channel.</a></p>
+
+                <div class="emptySeparator"></div>                    
+            
+                <h2>Important Notes</h2>
+
+                <div class="lineGradientSeparator"></div>
+
+                <ul>
+                    <li>
+                        "Smart Weathering" is meant to be used with Cycles only.
+                    </li>
+                    <li>
+                        This solution is not meant to be a complete replacement of current tools/ workflows such as unwrapping and texturing methods. However, this tool will be a much more efficient method in many scenarios (especially in still renderings works, or where you need animated textures).
+                    </li>
+                    <li>
+                        SW 3.0.0 is compatible with Blender 4.0 and above. This is because we used some features that are only available since this version. The development of our product for previous Blender versions will not be continued, but you will still have access to the previous versions of the add-on in case you need them. Previous versions of SW are compatible with previous versions of Blender.
+                    </li>
+                    <li>
+                        The product is provided "as is" without warranty of any kind. 
+                    </li>
+                    <li>
+                        We will of course try to improve it and release updates, despite we are not obligated to provide maintenance.
+                    </li>
+                    <li>
+                        Even though our addons should work on other OS, we can ensure that they work for Windows. For IOS and Linux some things may not work as expected. If this is the case, please contact us and we will try to make the corresponding adjustments. We don’t have these systems to test our products on them.
+                    </li>
+                </ul>
+                <p>You can check more important notes in <a href="https://tinquify.notion.site/3d0434c0f3d94a95b5bb645ba6cec89a?v=7b3635a0721b4569951607281dd640e3&pvs=4" target="_blank">this section</a> of our documentation.</p>
+
+                <div class="emptySeparator"></div>                    
+
+                <h2>Extras</h2>
+
+                <div class="lineGradientSeparator"></div>
+                
+                <p>For the development and our presentation, we mainly used models, textures, and addons from these great creators!</p>
+                <p>Joshua Knauber, Polyhaven, Oleg Ushenok, Polygoniq, Oleg Ovigon, Bproduction, Difffuse Studio, 3D SHAKER, Greeble Town, SolCommand, Other Realms, BlenderGilads, PolyPaul, Elin, Blender Guppy, and Mark Kingsnorth.</p>
+                <p>Recommended PBR baker from other great creators:</p>
+                <ul>
+                    <li>
+                        Simple Bake
+                    </li>
+                </ul>
+
+                <div class="emptySeparator"></div>                    
+
+                <h2>Contact</h2>
+
+                <div class="lineGradientSeparator"></div>
+
+                <p>If you have any doubts, please, feel free to contact us at: <a href="mailto:contact@tinquify.com" target="_blank">contact@tinquify.com</a></p>
+                <p>You can check more information about us at <a href="https://allmylinks.com/tinquify" target="_blank">allmylinks.com/tinquify</a></p>
+            </div>
+
+        </div> 
+
+        <img src="https://tinquify.com/media/SW%20-%20v%203.0.0%20-%20Graphic%20-%20BM%20-%20Footer%201%20-%20b2c14.jpg" width="100%" alt="">
+    </div>
+</body>
+
+</html>

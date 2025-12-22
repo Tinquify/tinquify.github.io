@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        
+        *{box-sizing: border-box;}
+
+        /* Containers */
+        .fullwidthContainer {
+            width:100%;
+            /*outline: 3px solid cyan;*/
+        }
+
+        .marginedContainer {
+            margin: 0 6%;
+            /*outline: 3px solid khaki;*/
+        }
+
+        /* Media */
+        .video1 {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .video-responsive {
+        position: relative;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #00000000;
+        border-radius: 20px; /* opcional, esquinas redondeadas */
+        }
+
+        .video-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        }
+
+        .juxtaposeCustomContainer {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .juxtaposeCustomContainer .juxtaposeCustom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .juxtaposeCustom #juxtapose-embed{
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /*.juxtaposeCustom #juxtapose-embed{
+            width: 100%;
+        }*/
+
+
+        .borderRadiusRight {
+            border-radius: 0 20px 20px 0;
+            
+        }
+
+        .borderRadiusLeft {
+            border-radius: 20px 0 0 20px;
+        }
+
+
+        /* Text */
+
+        h2 {
+            text-align: center;
+        }
+        h3, h4, h5, p, ul, h2 {
+            font-family: sans-serif;
+            color: #0D4768;
+        }
+
+        p{
+            margin: 20px 0;
+        }
+
+        h2{
+            margin: 40px 0;
+        }
+
+        h3, h4, h5, h6 {
+            margin: 20px 0;
+        }
+
+        a{
+            color: #39DBFF;
+        }
+
+
+        
+        /* Style */
+        
+        .mediaSideModule{
+            display: flex;
+            justify-content: space-between;            
+            align-items: center;
+            /*position: relative;
+            height: 40vw;      */  
+        }
+
+        
+        .mediaSide {
+            width: 59%;
+            /*display: inline-block;*/
+            /*vertical-align: middle;*/
+            overflow: hidden;
+        }
+
+        .textSide {
+            width: 39%;
+            font-size: 75% !important;
+            /*display: inline-block;*/
+            /*vertical-align: middle;*/
+            padding: 20px 2%;
+            /*outline: 3px solid orange;*/
+        }
+
+        .backgroundLightBlue {
+            background-color: #F1F6F9;
+        }
+
+        .backgroundDarkBlue {
+            background: linear-gradient(135deg, #0D4768,#072435);
+        }
+
+        .textLight p, .textLight h1, .textLight h2, .textLight h3, .textLight h4, .textLight h5, .textLight ul{
+            color: white;
+        }
+
+        .textGradient {
+            /*background-image: linear-gradient(90deg,#39DBFF, #39ACFF);*/
+            color:#39DBFF !important;
+            /*-webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;*/
+        }
+
+        .extraPadding {     
+            padding: 5%;
+        }
+
+        
+        .extraPaddingHeight {     
+            padding: 30px 0;
+        }
+
+        .whiteCard {
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .emptySeparator {
+            height: 40px;
+        }
+        .emptySeparator2 {
+            height: 80px;
+        }
+
+        .lineGradientSeparator {
+            width: 200px;        
+            height: 10px;
+            background: linear-gradient(45deg, #39DBFF, #39ACFF);
+            border-radius: 20px;
+            margin: 40px auto;        
+        }
+
+        .borderGradient1{
+            border: 8px solid blue;
+            border-radius: 20px;
+            border: double 8px transparent;
+            background-image: linear-gradient(#0D4768,#072435), linear-gradient(90deg, #39DBFF,#39ACFF);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            overflow: hidden;
+        }
+
+        .borderGradient2{
+            background-image: linear-gradient(90deg, #39DBFF,#39ACFF);
+            border-radius: 28px;
+            overflow: hidden;
+            padding: 8px;
+        }
+
+
+        .image-gallery{
+            width: 100%;
+            height: 77vw;
+            overflow: hidden;
+        }    
+
+        .etherealSkiesPlaylists{
+            display: inline-block;
+            width: 32%;
+        }
+
+        .etherealSkiesPlaylists img{
+            width: 100%;
+        }
+
+        /* Unused */
+
+        /* Unused */
+
+        </style>   
+
+    </head>
+    <body>
+        <div class="fullwidthContainer"> <!-- Gigacontainer -->
+            <div class="marginedContainer extraPaddingHeight"> <!-- Container 1-->
+                <div>
+                    
+                    <video src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Intro%20-%20Auto%203_prob4%20-%208daa2.mp4" class="video1" autoplay loop muted></video>
+
+                    
+
+                    <div class="emptySeparator"></div>
+
+                    <h2>Our products</h2>
+
+                    <div class="lineGradientSeparator"></div>
+
+                    <div>
+                    <a href="https://blendermarket.com/products/proterials" target="_blank"><img src="https://tinquify.com/media/Tinquify%20-%20Redirection%20Banner%20-%20Proterials%20-%20d05b5.jpg" class="video1" alt=""></a>
+                    </div>
+
+                    <div style="height: 15px;"></div>
+
+                    <div>
+                    <a href="https://blendermarket.com/products/smart-weathering" target="_blank"><img src="https://tinquify.com/media/Tinquify%20-%20Redirection%20Banner%20-%20Smart%20Weathering%20-%20dbef4.jpg" class="video1" alt=""></a>
+                    </div>
+
+                    <div style="height: 15px;"></div>
+
+                    <div class="borderGradient2">
+                    <a href="#"><img src="https://tinquify.com/media/Tinquify%20-%20Redirection%20Banner%20-%20Etheral%20Skies%20-%20c9594.jpg" class="video1" alt=""></a>
+                    </div>
+
+                    <div class="emptySeparator"></div>
+
+                    <h2>Introduction</h2>
+
+                    
+
+                    <div class="lineGradientSeparator"></div>
+
+                    <p>
+                        <b>Skies set the mood and connotation of many of your 3D scenes.</b>
+                    </p>
+                    <p>
+                        And many times they will be the <b>main light source and background</b> of your render.
+                    </p>
+                    <p>
+                        This means that this light source <b>will define most of the aspect of your project.</b>
+                    </p>
+                    
+                    <br>
+
+                    <p>
+                        <b>Choosing a good quality HDRI is an important step</b> to the determine the final render output.
+                    </p>
+                    
+                    <br>
+
+                    <p>
+                        <i>Generally, what happens with HDRIs is that either they are gathered from very different sources (which makes them very unconsistent), they don’t have the enough quality, or the good ones are very expensive.</i>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        This is why <b> we decided to carefully create this pack to give you</b> a wide variety of skies that will give you the <b>freedom to play with different lighting conditions, while ensuring quality, consistency, efficiency, and ease of use.</b>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        If you are interested in <b>making your renders shine</b>, then this product will really like you!
+                    </p>
+
+
+                    <div class="emptySeparator"></div>
+                </div>
+
+
+                
+
+                <!-- Promotion label
+                
+                <div id="offer">
+                    <div class="textLight borderGradient2">
+                        <div class="extraPadding backgroundDarkBlue" style="border-radius: 20px; overflow: hidden;">
+
+                            <h2 style="margin: 0">Relaunch sale!</h2>
+
+                            <div class="lineGradientSeparator" style="margin: 20px auto"></div>
+
+                            <h2 style="margin: 20px 0"><span class="textGradient">25% Off</span> for a <span class="textGradient">week!</span></h2>
+
+                            <p style="text-align: center; margin: 0;">Use the code</p>
+
+                            <h2 class="textGradient" style="text-align: center; margin: 0;">sky25off</h2>
+
+                            <p  style="text-align: center; margin: 0;">when purchasing and you will get the discount.</p>
+
+                            <p style="text-align: center; font-size: .8em; color: rgb(153, 174, 202)"><i>The offer will be from 19/08 to 27/08.</i></p>
+                        </div>
+                    </div>
+                </div>-->            
+
+
+                    <div class="backgroundLightBlue" style="border-radius: 20px;">
+                        <div class="marginedContainer extraPaddingHeight "><!-- Container 3-->
+                            
+                            <h2>Watch the preview! ▶️</h2>
+
+                            <div class="lineGradientSeparator"></div>
+
+
+                            <div class="emptySeparator"></div>
+
+                            <div class="video-responsive">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/Q6dzz2477bU?si=rzcOg_uLPEtTYdAW"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+
+                            <div class="emptySeparator"></div>
+                            
+                            <div class="video-responsive">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/oAlDERIOOPE?si=16TwKEuNHd-cSfz2"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+
+                            <div class="emptySeparator"></div>
+
+                            <div class="video-responsive">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/nSGafE38eZk?si=EJ7mForaovb_-x2T"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+
+                            <div class="emptySeparator"></div>
+
+                        </div>
+                    </div>
+                
+                <div class="emptySeparator"></div>            
+                
+                <div class="emptySeparator"></div>
+
+            </div>
+            <div class="backgroundLightBlue">
+
+                <div class="marginedContainer extraPaddingHeight">
+
+                    <div class="emptySeparator"></div>
+
+                    <h2>Features</h2>
+
+                    <div class="lineGradientSeparator"></div>
+
+                    <div class="emptySeparator"></div>
+
+
+                    <h2>Pure skies</h2>
+
+
+                    <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Gallery%20image%20-%20Pure%20skies%20-%20082b0.jpg" class="video1" alt="">
+
+                    <p><b>You will see the sky without any obstacle on the horizon.</b></p>
+                    <p>No mountains, trees, or buildings will be at sight.</p>
+                    <p>And, by default, the horizon line is slightly under the “3D universe horizon line” to ensure that the dome will always cover the hemisphere.</p>
+
+                    <div class="emptySeparator"></div>
+
+                    <h2>Variety</h2>
+
+                    <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Variety%20-%2037dcb.jpg" class="video1" alt="">
+                    
+                    <p>We decided to create a <b>sky HDRI pack with a wide variety of different lighting moods</b> to give you lots of creative freedom when choosing the right HDRI for your 3D scene.</p>
+
+                    <!--
+                    <p>We decided to create a <b>sky HDRI pack with a wide variety of different lighting moods</b> to give you lots of creative freedom when choosing the right HDRI for your 3D scene. Our full pack (30 HDRIs in total) covers different types of the following traits:</p>
+                    -->
+                    
+                    
+
+                    <!--
+                    <ul>
+                        <li><b>by Amount of clouds 🌥️</b>
+                            <ul>
+                                <li>0% (Clear) = 8</li>
+                            </ul>
+                            <ul>
+                                <li>25% (Partially clouded) = 8</li>
+                            </ul>
+                            <ul>
+                                <li>50% (Clouded) = 9 </li>
+                            </ul>
+                            <ul>
+                                <li>75%  (Mostly clouded) = 3</li>
+                            </ul>
+                            <ul>
+                                <li>100% (Overcast) = 2</li>
+                            </ul>
+                        </li>
+                        <li><b>by Time 🕓</b>
+                            <ul>
+                                <li>Sunset / sunrise = 13</li>
+                            </ul>
+                            <ul>
+                                <li>Midday = 5</li>
+                            </ul>
+                            <ul>
+                                <li>Morning / Afternoons = 9</li>
+                            </ul>
+                            <ul>
+                                <li>Nights = 3</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>by Shadow types ⛱️</b>
+                            <ul>
+                                <li>Sharp = 15</li>
+                            </ul>
+                            <ul>
+                                <li>Semi = 4</li>
+                            </ul>
+                            <ul>
+                                <li>Soft = 11</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>And even some of them have a rainbow 🌈</p>
+
+                    -->
+
+                    <div class="emptySeparator"></div>
+
+                    <h2>Real skies</h2>
+
+                    <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Real%20skies%202%20-%204bd6a.gif" class="video1" alt="">
+
+                    <p><b>These HDRIs are not CGI representations.</b> We took photos of real skies to create this pack.</p>
+                    <p>You will find the beautiful randomness of nature in each one!</p>
+
+                    <div class="emptySeparator"></div>
+
+
+                    <h2>Versatility</h2>
+
+                    <p><b>Everyone that makes renders will probably need a good HDRI</b> to light up the scene at some point. So we can say that almost every 3D artist can take an advantage of this. However <b>some of the most notable professions are:</b></p>
+                    <ul>
+                        <li>
+                            Architectural renderer
+                        </li>
+                        <li>
+                            Product renderer
+                        </li>
+                        <li>
+                            Concept art artists
+                        </li>
+                        <li>
+                            Videogame developers
+                        </li>
+                        <li>
+                            Multimedia designers
+                        </li>
+                    </ul>
+                    
+                    <div class="emptySeparator"></div>
+
+                    <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Aplications%203%20-%20b3f8b.jpg" class="video1" alt="">
+
+                    <!-- Image with 3 section, arch, auto, concept  + mini gif of different scenes being tested-->
+
+
+                    <div class="emptySeparator"></div>
+                    <div class="emptySeparator"></div>
+
+                    <div class="textLight borderGradient2">
+                        <div class="extraPadding backgroundDarkBlue" style="border-radius: 20px; overflow: hidden;">
+
+                            <h2>Accurate Lighting</h2>
+
+                            <div class="lineGradientSeparator"></div>
+
+                            <div class="emptySeparator"></div>
+        
+                            <!-- Subparts start here-->
+                            <h3 class="textGradient">Unclipped EVs</h3>
+        
+                            <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Exposure%201%20-%209f4eb.gif" class="video1" alt="">
+        
+                            <p>Our HDRIs have been retouched to display a <b>correct sun intensity.</b> This will ensure that the amount of light and shadows are correct.</p>
+                            <p>This means that there will be sharp shadows when they should, and you will not have to worry about correcting or adding auxiliary light emitters.</p>
+
+                            <div class="emptySeparator"></div>
+        
+        
+                            <h3 class="textGradient">Calibrated according to real world photographic values</h3>
+        
+                            <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Real%20world%20camera%201%20-%2017484.gif" class="video1" alt="">
+        
+                            <p><b>Each HDRI was adjusted to match the same lighting condition than reality.</b></p>
+                            <p>In simple words, night HDRIs will look darker than sunny days HDRIs at the same exposure. </p>
+                            <p>This ensures a realistic lighting condition, and you will need to adjust the shutter speed of the camera (or EVs) just as you would need to do in the real world.</p>
+
+                            <div class="emptySeparator"></div>
+        
+                            <h3 class="textGradient">White balance</h3>
+                            <p>We have tuned them to ensure that the white balance is correctly set.</p>
+
+                            <div class="emptySeparator"></div>
+        
+                        </div>
+                    </div>
+
+                    <div class="emptySeparator"></div>
+                    <div class="emptySeparator"></div>
+
+                    <div class="textLight borderGradient2">
+                        <div class="extraPadding backgroundDarkBlue" style="border-radius: 20px; overflow: hidden;">
+
+                            <h2>Consistency</h2>
+
+                            <div class="lineGradientSeparator"></div>
+
+                            <p><b>The HDRIs will just work fine out of the box.</b></p>
+                            <p>We have ensured that every HDRI in this pack has a consistent quality not only in terms of lighting, but also in the following features.</p>
+
+                            <div class="emptySeparator"></div>
+        
+                            <!-- Subparts start here-->
+                            <h3 class="textGradient">Carefully edited</h3>
+        
+                            <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Carefully%20edited%20-%204c745.gif" class="video1" alt="">
+        
+                            <p>We edited them to ensure that there are the <b>least amount of artifacts as possible.</b></p>
+                            <ul>
+                                <li>No sun flares.</li>
+                                <li>No dust particles.</li>
+                                <li>No birds (or UFOs?) .</li>
+                                <li>No chromatic aberration.</li>
+                                <li>No bad stitching.</li>
+                            </ul>
+
+                            <div class="emptySeparator"></div>
+        
+                            <h3 class="textGradient">Centered sun</h3>
+
+                            <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Centered%20sun%20cropped%20-%20a7413.jpg" class="video1" alt=""> <!-- some hdris being alternated to show how the sun is aligned (goes up and down)-->
+                            <p>For ease of use, you will find that each of them has the sun centered. This makes finding the right HDRI a much easier task when iterating.</p>
+
+                            <div class="emptySeparator"></div>
+
+                            <h3 class="textGradient">14k and 2k versions</h3>
+
+                            <img src="https://tinquify.com/media/Tinquify%20-%20HDRIs%20-%20Skies%20-%20Pack%2001%20-%20Gallery%20image%20-%20Zoom%202%20-%2013d9c.jpg" class="video1" alt=""> <!-- Video of zooming in the 14k-->
+        
+                            <p>While the high resolution ones (14k px) are great for final renders (as they have lots of detail), the low resolution ones will let you iterate more easily when choosing the right HDRI for your scene because they are much faster to load.</p>
+
+                            <div class="emptySeparator"></div>
+        
+                            <h3 class="textGradient">Optimized</h3>
+                            <p>You will not only get very high-quality images, but also you will find that all of our panoramas are <b>very optimized compared to many others.</b></p>
+                            <p>This is mainly achieved by the HDR file format and the need to only show the light information from where it is important: the upper half of the dome.</p>
+                            <p>The average size of our 14K ones is 80MB. To give you a reference most of the HDRIs at that same resolution can take up to 200MB in HDR or 1GB in EXR format.</p>
+    
+
+
+                            <div class="emptySeparator"></div>
+        
+                            <h3 class="textGradient">Well organized and tagged</h3>
+                            <p><b>Each HDRI is semantically named to easily find the one you need.</b></p>
+                            <p>Our naming convention sorts the HDRI according to their main relevant aspects.</p>
+                            <p>These are: Resolution (High / Low) - Approx. % of clouds - Day time - Type of shadow + Unique code.</p>
+
+                            <div class="emptySeparator"></div>
+        
+                            <h3 class="textGradient">Preview image samples</h3>
+                            <p><b>We also provide sample preview images</b> that will help you easily define which HDRI of our pack fits your project best.</p>
+                            <p>That is a lot of time saved in just choosing the right HDRI!</p>
+
+                            <div class="emptySeparator"></div>
+                            
+
+
+                            <h3 class="textGradient">Tested solutions</h3>
+
+                            <p><b>Tested and improved</b> up to the point where we can ensure that you will be able <b>to make professional looking renders.</b></p>
+                            
+                            <div class="emptySeparator"></div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="emptySeparator"></div>
+                </div>
+
+            </div>
+
+                    
+            <!--<img src="https://tinquify.com/media/HDRIs%20Skies%20-%20Pack%2001%20-%20Graphic%20-%20BM%20-%20Misc%201%20-%20f6677%20-%20641d1.png" class="fullwidthContainer" width="100%" alt="">-->
+
+            </div> 
+
+            
+            <div class="fullwidthContainer backgroundDarkBlue textLight" style="padding: 40px 0"> <!-- Container 2-->
+                <h2 class="textGradient">Use them in your favorite 3D program</h2>
+
+                <div class="lineGradientSeparator"></div>
+
+
+                <div class="marginedContainer" style="text-align: center;"><p>These assets are provided as <b>.HDR files that can be used in any 3D software that supports them (practically all).</b></p></div>
+
+                <div class="emptySeparator"></div>
+
+                <div class="marginedContainer">
+                    <div class="textLight borderGradient2">
+                        <div class="extraPadding backgroundDarkBlue" style="border-radius: 20px; overflow: hidden;">
+
+                            <h2 style="margin: 0">Are you a Blender user?</h2>
+
+                            <p><b>If you are, then good news for you!</b> This pack also contains a <b>Blender Assets version of the HDRIs.</b></p>
+
+                            <p>Below are some of the <b>main advantages you will have.</b></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="emptySeparator"></div>
+                
+                <div class="marginedContainer">
+                    <div>
+                        <h3 class="textGradient" style="text-align: center">Blender Assets ready</h3>
+                        <p><b>You will just need to drag and drop them</b>, and you will have very handy controllers to <b>tweak the HDRIs most "commonly adjusted"</b> properties.</p>
+                        <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Drag%20and%20drop%201%20(3x)%20-%205ed8f.gif" class="video1" alt="">
+
+                        <div class="emptySeparator"></div>
+                    </div>
+                </div>
+
+
+                <div class="emptySeparator2"></div>
+
+                <div class="mediaSideModule"> <!-- Media side module-->
+                    <div class="textSide">
+                        <p class="textGradient">Categorized</p>
+                        <p>The assets are categorized according to the same criteria that the file name has.</p>
+                    </div>
+                    <div class="mediaSide borderRadiusLeft">
+                        <img src="https://tinquify.com/media/HDRI%20Skies%20-%20Pack%2001%20-%20Categorized%203%20(2x)%20-%208e76f.gif" class="fullwidthContainer" alt="">
+                    </div>
+                </div>
+
+                <div class="emptySeparator2"></div>
+
+                <div class="mediaSideModule"> <!-- Media side module-->
+                    <div class="mediaSide borderRadiusRight">
+                        <img src="https://tinquify.com/media/HDRI%20Skies%20-%20Pack%2001%20-%20Z%20rotation%201%20(2x)%20-%204d615.gif" class="fullwidthContainer" alt="">
+                    </div>
+                    <div class="textSide">
+                        <p class="textGradient">Rotate</p>
+                        <p>Configure the <b>angle of the HDRIs in Z axis</b> to decide the illumination with precision, allowing for a wide variety of moods with the same sky.                    
+                        </p>
+                    </div>
+                </div>
+
+                <div class="emptySeparator2"></div>
+
+                <div class="mediaSideModule"> <!-- Media side module-->
+                    <div class="textSide">
+                        <p class="textGradient">Horizon line</p>
+                        <p>Control where the horizon line falls with this offset slider.</p>
+                        <!--<p>By default, it is set slightly below the real horizon, to fully fill the whole sky.</p>-->
+                    </div>
+                    <div class="mediaSide borderRadiusLeft">
+                        <img src="https://tinquify.com/media/HDRI%20Skies%20-%20Pack%2001%20-%20Horizon%201%20(2x)%20-%2095279.gif" class="fullwidthContainer" alt="">
+                    </div>
+                </div>
+                
+                <!---->
+
+                <div class="emptySeparator2"></div>
+
+                <div class="mediaSideModule"> <!-- Media side module-->
+                    <div class="mediaSide borderRadiusRight">
+                        <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Punch%20(2x)%20-%2069b9b.gif" class="fullwidthContainer" alt="">
+                    </div>
+                    <div class="textSide">
+                        <p class="textGradient">Punch</p>
+                        <p>An effect we added to our HDRIs system, that enhances their contrast and colours when enabled.</p>
+                    </div>
+                </div>
+
+                <div class="emptySeparator2"></div>
+
+                <div class="mediaSideModule"> <!-- Media side module-->
+                    <div class="textSide">
+                        <p class="textGradient">EVs</p>
+                        <p>Although every HDRI has its EVs correctly calibrated, you can <b>change the HDRIs EVs</b> value with this slider.</p>
+                        <!--<p>It is suggested to use this slider just with an artistic purpose or slight retouches, for achieving realism it is adviced to control the exposure of the whole 3D scene.</p>-->
+                        <!--<p>Although every HDRI has been carefully worked and have their EVs correctly calibrated, <b>you can change the HDRIs EVs value with this slider.</b></p>
+                        <p>This will allow you to adjust the brightness of the current sky HDRI to your needs, without the need to change the general exposure value in the render settings.</p>                        
+                        -->
+                    </div>
+                    <div class="mediaSide borderRadiusLeft">
+                        <img src="https://tinquify.com/media/HDRI%20Skies%20-%20Pack%2001%20-%20EVs%202%20(2x)%20-%2073357.gif" class="fullwidthContainer" alt="">
+                    </div>
+                </div>
+
+                <div class="emptySeparator2"></div>
+
+                <div class="mediaSideModule"> <!-- Media side module-->
+                    <div class="mediaSide borderRadiusRight">
+                        <img src="https://tinquify.com/media/HDRI%20Skies%20-%20Pack%2001%20-%20Temperature%201%20(2x)%20-%208e537.gif" class="fullwidthContainer" alt="">
+                    </div>
+                    <div class="textSide">
+                        <p class="textGradient">Color Temperature</p>
+                        <p><b>Tweak the aspect</b> of the HDRI to be rather <b>warmer or colder</b> with this parameter, offseting it from its neutral white balance.</p>
+                    </div>
+                </div>
+
+                <div class="emptySeparator2"></div>
+
+                <div class="mediaSideModule"> <!-- Media side module-->
+                    <div class="textSide">
+                        <p class="textGradient">Gamma</p>
+                        <p>If you are an advanced user, you can <b>retouch the gamma</b> to enhance or decrease the sun intensity influence.</p> <!-- Describe gamma-->
+                    </div>
+                    <div class="mediaSide borderRadiusLeft">
+                        <img src="https://tinquify.com/media/HDRI%20Skies%20-%20Pack%2001%20-%20Gamma%202%20(2x)%20-%20e6a93.gif" class="fullwidthContainer" alt="">
+                    </div>
+                </div>
+
+                <div class="emptySeparator2"></div>
+
+                <div class="mediaSideModule"> <!-- Media side module-->
+                    <div class="mediaSide borderRadiusRight">
+                        <img src="https://tinquify.com/media/HDRI%20Skies%20-%20Pack%2001%20-%20Greyscale%201%20(2x)%20-%2017abb.gif" class="fullwidthContainer" alt="">
+                    </div>
+                    <div class="textSide">
+                        <p class="textGradient">Greyscale</p>
+                        <p>Artistically retouch the sky with the greyscale slider. Combinable with the punch effect.</p>
+                        <!--<p>Combinable with the punch effect.</p>--><!-- Describe Greyscale-->
+                    </div>
+                </div>
+
+                <div class="emptySeparator2"></div>
+
+                <div class="marginedContainer">
+                    <div>
+                        <h3 class="textGradient" style="text-align: center">Eevee compatible</h3>
+                        <p>Since Blender 4.2, <b>Eevee now supports HDRI lighting</b>, so you will take advantage of this when using this pack!</p>
+                        <img src="https://tinquify.com/media/HDRI%20-%20Sky%20-%20Pack%2001%20-%20Eevee%202%20-%206b1e6.gif" class="video1" alt="">
+
+                        <div class="emptySeparator"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="emptySeparator">
+                
+            </div>
+
+
+                
+            <div class="emptySeparator"></div>
+
+            <div class="marginedContainer extraPaddingHeight"><!-- Container 3-->
+                <h2>Convenient license</h2>
+
+                <p style="text-align: center">All the assets included can be used in <b>commercial and personal works</b>.</p>
+
+                <div class="emptySeparator"></div>
+
+            </div>
+
+
+            <div class="marginedContainer extraPaddingHeight"><!-- Container 3-->
+                
+                <h2>🧡 Blender Foundation support!</h2>
+
+                <p style="text-align: center">Part of this product's value is donated to the Blender Foundation!</p>
+
+                <div class="emptySeparator"></div>
+
+            </div>
+                
+
+            <div class="backgroundLightBlue">
+
+                <div class="marginedContainer extraPaddingHeight">         
+                
+                    <h2>More information</h2>
+
+                    <div class="lineGradientSeparator"></div>
+                    
+                    <div class="emptySeparator"></div>
+                    
+                    <div class="extraPadding whiteCard">
+                        <h3 class="textGradient">What is the difference between the price tags?</h3>
+                        <p><b>We want to be really sincere with you.</b></p>
+                        <p>We are a small studio and we know that not everybody has Pixar’s budget.</p>
+                        <p>That is why we decided that <b>the best way to offer this product and be fair to everybody is by splitting it by ranges.</b></p>
+                        <ul>
+                            <li>
+                                Indie
+                                <ul>
+                                    <li>
+                                        For <b>individuals and small studios</b> with revenue up to <b>USD25k/year.</b>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Pro
+                                <ul>
+                                    <li>
+                                        For <b>professionals and studios</b> with revenue between <b>USD25k/year and USD250k/year, and for 10 seats.</b>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Company
+                                <ul>
+                                    <li>
+                                        For <b>businesses</b> with revenue between <b>USD250k/year and USD1M/year, and for 20 seats.</b>
+                                    </li>
+                                </ul>
+                            <li>
+                                Enterprise
+                                <ul>
+                                    <li>
+                                        For <b>businesses</b> with revenue exceeding <b>USD1M/year,  and for 50 seats within a single studio or division.</b>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p><b>To be clear:</b></p>
+                        <ul>
+                            <li>
+                                <b>There are no differences</b> either in terms of quality (you will receive the same product) or in terms of license type for the different price tiers.
+                            </li>
+                            <li>
+                                <b>The revenue and seats are meant to be considered as orientation when deciding.</b>
+                                <ul>
+                                    <li>
+                                        The software is not locked by seats, it is just a suggestion from us to be fair with everybody.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                In short, after your purchase, you will be able to have a <b>commercial license</b> of the product that has the following features:
+                                <ul>
+                                    <li>
+                                        Royalty-free
+                                    </li>
+                                    <li>
+                                        No seats limitation (only suggested)
+                                    </li>
+                                    <li>
+                                        No time usage limitation
+                                    </li>
+                                    <li>
+                                        No media reproduction limitation
+                                    </li>
+                                    <li>
+                                        Access to free updates
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><b>This is a simplified version</b> of the detailed terms outlined in the product's license agreement. You can see the license of the royalty-free assets <a href="https://tinquify.com/media/Tinquify%20-%20License%20-%20Digital%20Assets%20-%204ca5f.pdf" target="_blank">here</a> and the license that corresponds to the GNU GPL assets <a href="https://tinquify.com/media/Tinquify%20-%20License%20-%20Blender%20Assets%20-%200af2a.pdf" target="_blank">here</a>. Make sure to read them before buying the product.</p>
+
+                        <!-- Add license links here-->
+
+                        <p><b>Some cases</b> that could guide you in choosing the tier are:</p>
+                        <ul>
+                            <li>
+                                If you have a <b>mini studio with some friends</b> and you are all earning less than USD25k in total per year the “Indie” tier is ok.
+                            </li>
+                            <li>
+                                If you are <b>working for a company</b> and your salary is above USD25k per year then it would be very kind if you consider buying the “Pro” tier or maybe buying the “Freelancer” tier more than once to be supportive.
+                            </li>
+                            <li>
+                                If you are a <b>studio</b> that earns more than USD25k and less than USD250k per year and has 3-5 employees you should get the “Pro” tier.
+                            </li>
+                            <li>
+                                If you are a <b>company</b> that earns more than USD250K and less than USD1M per year and has 50 employees you should get the “Company” tier and purchase it at least 3 times to cover the amount of suggested seats.
+                            </li>
+                            <li>
+                                If your <b>company</b> earns more than USD 1M per year, we recommend choosing the “Enterprise” tier, or contacting us for guidance on the most suitable option for your organization.
+                            </li>
+                        </ul>
+                        <p>We hope you understand that, we set the price at the lowest we believe it can be affordable for those different tiers and fair for our work/effort.</p>
+                        <p><b>It is a matter of common sense</b> that the people who can benefit the most from it can support us in the same way they are getting benefited. If a big company has access to the addon at the same price a small freelancer does it would be a very unfair scenario.</p>
+                        <br>
+                        <p>We also have to mention that it would be nice if you consider purchasing the product again just for the sake of support. That would be greatly appreciated to keep the project running.</p>
+                        <br>
+                        <p><b>To sum up, the decision of which "price tag" to choose relies absolutely upon you, and we decided to trust you!</b></p>
+                    </div>
+                    
+
+                </div>
+                
+
+                <div class="emptySeparator"></div>
+
+            </div>
+            <div>
+
+
+                <div class="marginedContainer extraPaddingHeight">
+
+                    <div class="emptySeparator"></div>                    
+                
+                    <h2>Important Notes</h2>
+
+                    <div class="lineGradientSeparator"></div>
+
+                    <ul>
+                        <li>
+                            The product is provided "as is" without warranty of any kind.
+                        </li>
+                        <li>
+                            <b>Resolution for the 14k are 15.000 x 7.500 on average</b> and 2k versions have 2.500 x 1.250 px.
+                        </li>
+                    </ul>
+                    <p>You can check more important notes in our <a href="https://tinquify.com/media/Tinquify%20-%20License%20-%20Digital%20Assets%20-%204ca5f.pdf" target="_blank"> License and Terms and Conditions</a></p>
+                    
+
+                    <div class="emptySeparator"></div>                    
+
+                    <h2>Extras</h2>
+
+                    <div class="lineGradientSeparator"></div>
+                    
+                    <p>For the development and our presentation, we mainly used models, textures, and addons from <b>these great creators!</b></p>
+                    <p><b>Polygoniq, Diego Gangl, 3D SHAKER, and Mateo Gentile.</b></p>
+
+                    <div class="emptySeparator"></div>                    
+
+                    <h2>Contact</h2>
+
+                    <div class="lineGradientSeparator"></div>
+
+                    <p>If you have any doubts, please, feel free to contact us at: <a href="mailto:contact@tinquify.com" target="_blank">contact@tinquify.com</a></p>
+                    <p>You can check more information about us at <a href="https://allmylinks.com/tinquify" target="_blank">allmylinks.com/tinquify</a></p>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </body>
+
+</html>

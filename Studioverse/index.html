@@ -1,0 +1,1287 @@
+<!-- Proterials - Store page-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Containers */
+      .fullwidthContainer {
+        width: 100%;
+        background-color: #241540;
+        /*outline: 3px solid cyan;*/
+      }
+
+      .marginedContainer {
+        margin: 0 6%;
+        /*outline: 3px solid khaki;*/
+      }
+
+      /* Media */
+      .video1 {
+        width: 100%;
+        border-radius: 20px;
+      }
+
+      .juxtaposeCustomContainer {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .juxtaposeCustomContainer .juxtaposeCustom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .juxtaposeCustom #juxtapose-embed {
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      /*.juxtaposeCustom #juxtapose-embed{
+        width: 100%;
+    }*/
+
+      .borderRadiusRight {
+        border-radius: 0 20px 20px 0;
+      }
+
+      .borderRadiusLeft {
+        border-radius: 20px 0 0 20px;
+      }
+
+      /* Text */
+
+      h3,
+      h4,
+      h5,
+      p,
+      ul,
+      h2 {
+        font-family: sans-serif;
+        color: #ffffff;
+        text-shadow: 0px 0px 5px #ffffff80;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 20px 0;
+      }
+
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 800;
+      }
+
+      h2 {
+        font-size: 3.2rem;
+        margin: 40px 0;
+      }
+
+      h3{
+        font-size: 2.2rem;
+
+      }
+
+      h4{
+        font-size: 1.6rem;
+      }
+
+      p {
+        margin: 20px 0;
+      }
+
+      a {
+        color: #6e78ff;
+      }
+
+      .accent1{
+        background: -webkit-linear-gradient(45deg, #ffdf39, #ff8c39);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /*text-shadow: 0px 0px 5px #FFB639;*/
+        text-shadow: none;
+      }
+
+      /* Style */
+
+      .mediaSideModule {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .mediaSide {
+        width: 59%;
+        /*display: inline-block;
+        vertical-align: middle;*/
+        overflow: hidden;
+      }
+
+      .textSide {
+        width: 39%;
+        font-size: 75% !important;
+        /*display: inline-block;
+        vertical-align: middle;*/
+        padding: 20px 2%;
+        /*outline: 3px solid orange;*/
+      }
+
+      .backgroundAlt1 {
+        /*background: linear-gradient(180deg, #241540, #ccb7f3, #241540);*/
+        background: linear-gradient(180deg, #1c1b1f,#1a191d,#5c5962, #28252d, #333039,#46424e,#19181d,#1d1924,#403c47,#332f39,#221f28,#28242c,#2e2b35, #0f0e12);
+        /*background: linear-gradient(180deg, #1a1522,#271e36,#9c90b3, #1b1525, #2e2246,#423b50,#151020,#1b102e,#736988,#50485f,#1e1829,#221833,#635779, #161225);*/
+        /*background: linear-gradient(180deg, #241540,#241540,#ccb7f3, #241540, #8356d8,#ccb7f3,#241540,#2d0f63,#c3adec,#726192,#241540,#241540,#776697, #241540);*/
+
+        /*background: linear-gradient(180deg, #241540,#ccb7f3,#7b5ab8, #7056a0,#6432c2,#9366e6, #241540);*/
+      }
+
+      .backgroundAlt2 {
+        background-color: #16141a;
+        /*background-color: rgb(92, 200, 92);*/
+        /*background: linear-gradient(135deg, #4c3970, #35215c);*/
+      }
+
+      .backgroundAlt3 {
+
+        background-color: #2b2730;
+        /*background-color: pink;*/
+        /*background-color: #4c3970;*/
+      }
+
+      .textLight p,
+      .textLight h1,
+      .textLight h2,
+      .textLight h3,
+      .textLight h4,
+      .textLight h5,
+      .textLight ul {
+        color: white;
+      }
+
+      .centerText {
+        text-align: center;
+      }
+
+      .textGradient {
+        color: #ffdf39 !important;
+        text-shadow: 0px 0px 10px #ffdf39;
+      }
+
+      .extraPadding {
+        padding: 5%;
+      }
+
+      .extraPaddingHeight {
+        padding: 30px 0;
+      }
+
+      .floatCard1 {
+        background-color: #2b2730;
+        border-radius: 20px;
+      }
+
+      .floatCard1 p,
+      .floatCard1 li,
+      .floatCard1 .textGradient {
+      }
+
+      .emptySeparator {
+        height: 40px;
+      }
+
+      .emptySeparator2 {
+        height: 80px;
+      }
+
+      .emptySeparator3 {
+        height: 120px;
+      }
+
+      .emptySeparator4 {
+        height: 240px;
+      }
+
+      .lineGradientSeparator {
+        width: 200px;
+        height: 10px;
+        /*background: white;*/
+        background: linear-gradient(45deg, #ffdf39, #ff8c39);
+        border-radius: 20px;
+        margin: 40px auto;
+      }
+
+      .specialLineGradientSeparator {
+        width: 200px;
+        height: 10px;
+        background: white;
+        /*background: linear-gradient(45deg, #FFDF39, #FF8C39);*/
+        border-radius: 20px;
+        margin: 40px auto;
+        box-shadow: 0px 0px 20px #ffffff;
+      }
+
+      .borderGradient1 {
+        border: 8px solid blue;
+        border-radius: 20px;
+        border: double 8px transparent;
+        background-image: linear-gradient(#4c3970, #35215c),
+          linear-gradient(90deg, #ffdf39, #ff8c39);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        overflow: hidden;
+      }
+
+      /*.borderGradient2{
+        border: 8px solid blue;
+        border-radius: 20px;
+        border: 8px double transparent;
+        background-image: linear-gradient(white,white), linear-gradient(90deg, #FFDF39,#FF8C39);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        overflow: hidden;
+    }*/
+
+      .borderGradient2 {
+        background-image: linear-gradient(90deg, #ffdf39, #ff8c39);
+        border-radius: 28px;
+        overflow: hidden;
+        padding: 8px;
+      }
+
+      /* Unused */
+
+      /* Unused */
+    </style>
+  </head>
+
+  <body>
+    <div class="fullwidthContainer">
+      <!-- Gigacontainer -->
+      <div class="backgroundAlt1">
+        <div class="marginedContainer extraPaddingHeight">
+          <!-- Container 1-->
+          <!--<video src="https://tinquify.com/media/Proterials%20-%20V%201.0%20-%20Material%20Spheres%20Intro%201%20(optimized)%20-%20f4581.mp4" class="video1" autoplay loop muted></video>-->
+          <img
+            src="https://tinquify.com/media/Studioverse 1.0 - Intro Video - jdC8r - V1_Optimized.webp"
+            class="video1"
+            alt=""
+          />
+          <!--<img src="https://tinquify.com/media/Proterials%20-%20v%201.0%20-%20Material%20Spheres%20Intro%201%20-%20c4909.gif" class="video1" alt="">-->
+          <!--
+                <div class="borderGradient2">
+                    <p>Have you noticed that everything that surrounds us is imperfect? Have you appreciated the beauty of the “perfect imperfection”?</p>
+                </div>
+            
+                Just a test
+                -->
+          <div class="emptySeparator3"></div>
+          <h3 class="centerText accent1">Our products</h3>
+          <div class="emptySeparator"></div>   
+          <div>
+            <a
+              href="https://superhivemarket.com/products/proterials"
+              target="_blank"
+              ><img
+                src="https://tinquify.com/media/Tinquify%20-%20Redirection%20Banner%20-%20Proterials%20-%20d05b5.jpg"
+                class="video1"
+                alt=""
+            /></a>
+          </div>
+          <div style="height: 15px"></div>
+          <div>
+            <a
+              href="https://blendermarket.com/products/smart-weathering"
+              target="_blank"
+              ><img
+                src="https://tinquify.com/media/Tinquify%20-%20Redirection%20Banner%20-%20Smart%20Weathering%20-%20dbef4.jpg"
+                class="video1"
+                alt=""
+            /></a>
+          </div>
+          <div style="height: 15px"></div>
+          <div>
+            <a
+              href="https://blendermarket.com/products/ethereal-skies-hq-sky-hdris-mix-collection-pack-01"
+              target="_blank"
+              ><img
+                src="https://tinquify.com/media/Tinquify%20-%20Redirection%20Banner%20-%20Etheral%20Skies%20-%20c9594.jpg"
+                class="video1"
+                alt=""
+            /></a>
+          </div>
+          <div style="height: 15px"></div>
+          <div class="borderGradient2">
+            <a href="#"
+              ><img
+                src="https://tinquify.com/media/Tinquify - Redirection Banner - Studioverse - 3nFtO.jpg"
+                class="video1"
+                alt=""
+            /></a>
+          </div>
+
+
+          <div class="emptySeparator3"></div>
+
+          <h2 class="centerText accent1">
+            Let there be light
+          </h2>
+          <!--<h2>
+            <span style="color: #807399; text-shadow: 0px 0px 10px #6b6479"
+              >Let there be</span
+            >
+            <span style="font-size: 1em; text-shadow: 0px 0px 10px #ffffff"
+              >light</span
+            >
+          </h2>-->
+
+
+          <div class="centerText">
+            <p class="accent1">
+            <b>An amazing image is worth a thousand words.</b>
+            </p>
+            <p>And with our tool you can <b>make endless of them.</b></p>
+          </div>
+
+          <div class="emptySeparator"></div>
+
+
+            <p>Every CGI project concludes in a render.</p>
+            <p>
+            Camera angle, light and shadow, figure and background, and
+            compositing effects must play gracefully to conceive unique shots.
+            </p>
+            <p>
+            Along 15+ years of CGI experience, we gathered every single tip and
+            trick to make the ultimate tool to streamline your rendering
+            workflow.
+            </p>
+            <p>
+            Studioverse will provide professional quality assets and tools to
+            make amazing renders effortlesly.
+            </p>
+          <!-- Promotion label-->
+
+          <!--
+                <div id="offer">
+                    <div class="textLight borderGradient2">
+                        <div class="extraPadding backgroundAlt2" style="border-radius: 20px; overflow: hidden;">
+                            <h2 style="margin: 0">Launch sale!</h2>
+                            <div class="lineGradientSeparator" style="margin: 20px auto"></div>
+                            <h2 style="margin: 20px 0"><span class="textGradient">25% Off</span> for a <span class="textGradient">few days!</span></h2>
+                            <p style="text-align: center; margin: 0;">Use the code</p>
+                            <h2 class="textGradient" style="text-align: center; margin: 0;">proterialslaunch</h2>
+                            <p  style="text-align: center; margin: 0;">when purchasing and you will get the discount.</p>
+                            <p style="text-align: center; font-size: .8em; color: rgb(153, 174, 202)"><i>The offer will be from 25/01 to 07/02.</i></p>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+          <!-- Related Videos -->
+          <!--
+            
+                <div style="text-align: center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RjW0L0_98k0?si=iZV2CoHkS02AQ4Rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BPGhDJHCbOE?si=20-xICw_X31PE76m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G_Dl6Ti-o6Y?si=NoKMxt4EyTKHI1m4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/83cwC6POAW8?si=jBo2gszh7hkwqTZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4kGsnS-bVno?si=DLypwb4oR8l818HD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br>
+                </div>
+            
+                -->
+          <div class="emptySeparator4"></div>
+          <h3 class="centerText">Complete professional render suite</h3>
+          <p class="centerText">Enjoy creating with tailored render tools.</p>
+          <div class="emptySeparator"></div>
+          <img
+            src="https://tinquify.com/media/Studioverse%201.0%20-%20Menu%20Overview%20V2%20-%20LJt7V%20-%20V1_Optimized.webp"
+            class="video1"
+            alt=""
+          />
+          <div class="emptySeparator3"></div>
+          <h3 class="centerText">Streamline your workflow</h3>
+          <p class="centerText">
+            Simplify your studio rendering pipeline. Create complex studio
+            setups and keep them organized with our powerful and intuitive
+            tools.
+          </p>
+          <div class="emptySeparator"></div>
+          <img
+            src="https://tinquify.com/media/Studioverse 1.0 - Shot Manager Create, duplicate and properties - o9DUd - V1_Optimized.webp"
+            class="video1"
+            alt=""
+          />
+          <div class="emptySeparator3"></div>
+          <h3 class="centerText">Level up your productions</h3>
+          <p class="centerText">
+            Create masterpiece renders that not only communicate, but express
+            mood, tell story, and are memorable.
+          </p>
+          <div class="emptySeparator"></div>
+          <img
+            src="https://tinquify.com/media/Studioverse 1.0 - Level up your renders - lsDk6.webp"
+            class="video1"
+            alt=""
+          />
+          
+          <div class="emptySeparator3"></div>
+        </div>
+
+        <div class="backgroundAlt2">
+
+          <div class="marginedContainer extraPaddingHeight">
+
+            <div class="emptySeparator3"></div>
+
+            <h2 class="centerText accent1">Photorealistic Lighting</h2>
+
+            <div class="emptySeparator2"></div>
+
+            <h3 class="centerText">Visual Align</h3>
+            <div class="lineGradientSeparator"></div>
+
+            <div class="emptySeparator"></div>
+
+            <h4>Paint your surfaces with lights</h4>
+            <p>
+              Place your mouse where you want your
+              surface to shine. Use the different methods to adjust values like brightness, size and distance.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Visual Align and Adjust Create and customize - 5hBbH - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Focus on the image</h4>
+            <p>
+              Don’t get distracted. Use handy tools right a shortcut away to isolate your lighting to compare and finetune your setup.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Visual Align and Adjust Compare - 5hBbH - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Advanced Lighting setups</h4>
+            <p>
+              Create advanced lighting setups taking advatange of Blender’s Light
+              and Shadow Linking capabilities, but in a faster and easier to use
+              gesture.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Visual Align and Adjust Light linking and show - 5hBbH - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+
+            <div class="emptySeparator2"></div>
+            
+
+            <h3 class="centerText">Procedural Lights</h3>
+            <div class="lineGradientSeparator"></div>
+
+            <div class="emptySeparator"></div>
+
+            <h4>Softboxes, IES, Leds… you name it</h4>
+            <p>
+              Charged with many different customizable light types to make your
+              scene be a real studio.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Multiple lighting presets - hf3EW - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+
+            <div class="emptySeparator"></div>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Lights IES and Spots Create IES - HCbyV - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Customizable up to the photon</h4>
+            <p>
+              Use the lights as you would normally do, but feel the power of our
+              procedural setup to create realistic effects.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Custom Procedural Area lights V2 - OljDu - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+
+            <div class="emptySeparator"></div>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Lights IES and Spots Customize IES - HCbyV - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+
+            <h4>Infinite variations!</h4>
+            <p>
+              If you are not decided, let the dice do its job. Randomize them until you get that intersting illumination device.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Lights Presets Randomizer - SyQnP - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+
+
+            <h4>Save your own presets and use assets you already have</h4>
+            <p>
+              Reuse the lights you made in other projects by exporting them as
+              presets. Also, with just a minimal setup, you can add other sellers’
+              gobos, or light packs to integrate them with our addon.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Lights Presets Create and Save - JnViy - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Real Studio Lighting Textures and presets included</h4>
+            <p>
+              In some scenarios you may want to add some extra imperfections as
+              the real studio lights do. This pack include a set of them ready to
+              be used + many area and spotlight presets we created as starting points for the procedural versions.
+            </p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 -  Light presets included - XhSDW.jpg"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <div class="emptySeparator2"></div>
+
+            <h3 class="centerText">True Gobos</h3>
+
+            <div class="lineGradientSeparator"></div>
+            
+            <div class="emptySeparator"></div>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Gobos Create and presets - jCTrg - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            
+            <div class="emptySeparator"></div>
+            <p>
+              Our gobos are meant to be setup as actual shadow casters. Instead of
+              adding them to the spotilght they are separated from it to properly
+              cast shadows.
+            </p>
+            <div class="emptySeparator2"></div>
+            <h4>Procedural, images, or videos</h4>
+            <p>
+              Use our gobo assets to make your lighting more visually interesting
+              and create better moods. And easily add your own Gobos to the
+              collection (images or videos).
+            </p>
+
+
+            <div class="emptySeparator2"></div>
+            <h4>Promagically animated</h4>
+            <p>
+              Give anima to the static. Add realistic movement to still images
+              with our procedural setup. And don’t worry about repetition, each
+              gobo will have its own animation even if they are instanced!
+            </p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Gobos Procedurally animated - jCTrg - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Many to choose from!</h4>
+            <p>
+              Currently our library has 15 static ones and X animated ones. You
+              can also use your custom ones, and we plan to expand them over time.
+            </p>
+
+            <div class="emptySeparator3"></div>
+
+          </div>
+
+        </div>
+
+
+        <div class="backgroundAlt3">
+          <div class="marginedContainer extraPaddingHeight">
+
+            <div class="emptySeparator3"></div>
+
+            <h2 class="centerText accent1">Professional Cameras</h2>
+            <div class="emptySeparator"></div>
+            <h3 class="centerText">Camera from view</h3>
+
+            <div class="lineGradientSeparator"></div>
+            <div class="emptySeparator"></div>
+            <h4>Right here, right now</h4>
+            <p>
+              Create camera setups extremely quick with our pie menu. Feel like a
+              cinema director framing with your hands and setting the exact
+              perspective you want in a simple gesture.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Camera From View Create - CV6np - V2_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+
+            <h4>Readjust it at any moment</h4>
+            <p>
+              Fine-tune the camera angle, focal length, and decided where the focus of the image should be with our live DoF picker feature.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Camera From View Create and Readjust - Ra5xj - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator3"></div>
+
+
+            <h3 class="centerText">ProCamera</h3>
+
+            <div class="lineGradientSeparator"></div>
+          
+            <div class="emptySeparator"></div>
+
+            <h4>That’s what I call a cameraman</h4>
+            <p>
+              Use our Pro cameras with advanced rigs, that will let you have a
+              fine control over depth of field, focal length, and targeted
+              constraints.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - CameraPro Transform V4 - GnKFt - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+
+            <h4>Manual or Autofocus</h4>
+            <p>
+              Set it as Manual or enjoy using our rig with its built-in in Auto Focus feature. Quite handy for complex scenes.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - CameraPro Manual Focus V2 - 6t2w5 - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator"></div>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - CameraPro Auto Focus - I3jCq - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+
+            <h4>Advanced setup like Dolly zoom</h4>
+            <p>Create very dynamic camera animations with simple controls</p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - CameraPro Dolly Zoom V2 - pSkpB - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator3"></div>
+          </div>
+        </div>
+
+
+        <div class="backgroundAlt2">
+          <div class="marginedContainer extraPaddingHeight">
+
+
+            <div class="emptySeparator3"></div>
+            <h2 class="centerText accent1">Smart Compositor Effects</h2>
+            
+            <div class="emptySeparator"></div>
+
+            <h3 class="centerText">Smart effects</h3>
+
+            <div class="lineGradientSeparator"></div>
+            <p class="centerText">
+              Our effects smartly adapt to your scene setup. For example, vignette
+              effect will change according to your camera aspect ratio.
+            </p>
+            <div class="emptySeparator2"></div>
+            <h4>Better Glare and Bloom</h4>
+            <p>
+              Our glare and bloom setup works just out of the box. Simpler to
+              control, and better looking results by default with some extra
+              controls that the standard glare of Blender doesn’t have.
+            </p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Comp Glare and Bloom - 5iUNC - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Dirt on lens</h4>
+            <p>
+              Feeling Hoollywoodeske? Give your shot that dirt in the eye very
+              quickly.
+            </p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Comp Effects Dirt - 9O7Ha - V1.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Film Grain, Chromatic Aberration & Smart Vignetting</h4>
+            <p>
+              Add real life optics imperfection, as real cameras do! Add that ISO
+              or Film grain feeling with lots of customization (and it is animated
+              too!). Oh, and the the effect will automatically adapt to your
+              camera aspect ratio. Yes!
+            </p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Comp Effects Grain, Vignete, Distortion - yq979 - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Quick Backgrounds Colors and Gradients</h4>
+            <p>
+              Add plain or gradient colour to your transparent backgrounds very
+              easily!
+            </p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Comp Effects Background - opgaP - V1.webp"
+              class="video1"
+              alt=""
+            />
+            
+          </div>
+          
+          <div class="emptySeparator3"></div>
+
+        </div>
+
+
+        <div class="backgroundAlt3">
+          <div class="marginedContainer extraPaddingHeight">
+
+
+            <div class="emptySeparator3"></div>
+
+            <h2 class="centerText accent1">Convenient Environments</h2>
+
+            <div class="emptySeparator"></div>
+
+            <h4>Parametric Studio Generator</h4>
+            <p>Create studio backgrounds in a breezee.</p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Environment - Studio Editing - RRkNl - V1.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>CGI HDRIs</h4>
+            <p>
+              Bake the lighting of your scene with a single click button. Very
+              useful when you want to export it to other 3D softwares, or use
+              lighter lighting for Eevee (for example).
+            </p>
+            
+            <div class="emptySeparator3"></div>
+            
+          </div>
+
+        </div>
+
+
+        <div class="backgroundAlt2">
+          <div class="marginedContainer extraPaddingHeight">
+            
+            <div class="emptySeparator2"></div>
+
+            <h2 class="centerText accent1">Powerful Shot manager</h2>
+            <p>Do you think it was over? Here is the cherry on top.</p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Shot Manager Complex setups - aVLLg - V3_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Render Manager</h4>
+            <p>
+              Our render manager complements perfectly your already native
+              workflow with Blender. Create shots that store your current setup;
+              view layer, camera (with its current aspect ratio, shutter speed,
+              aperture and animations!), and world.
+            </p>
+            <div class="emptySeparator2"></div>
+            <h4>Create custom shots</h4>
+            <p>
+              Profesional renders are created with custom setups per shot. Not
+              only that. You may want to test different lightings and setups
+              during iterations or final renders.
+            </p>
+            <p>
+              Our addon lets you do these setups with ease, taking advantage of
+              the great tools that Blender already has. Naturally, create shots
+              with particular light conditions. Then save it as a shot. If you
+              want to create another one, just duplicate it and do the necessary
+              changes.
+            </p>
+            <div class="emptySeparator2"></div>
+            <h4>Have granular control</h4>
+            <p>
+              Change the resolution of the render per shot, adjust the camera
+              properties like the aperture, ISO, shutter speed, show or hide
+              properties that are relevant to you, filter the shots, re-order
+              them, add a tag to one or all of them, etc… Tons of details are
+              covered!
+            </p>
+            <div class="emptySeparator2"></div>
+            <h4>Physical Camera values</h4>
+            <p>
+              Play with real camera values to emulate the visual look that it
+              would have in your Blender Viewport. And if you are unsure of what
+              to set, use our custom presets to get started.
+            </p>
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Changing Camera Properties - 2Srsy - V2_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Render Queue and preview</h4>
+            <p>
+              Whether you had stills or animations, hit the Render queue button to
+              start converting all of those shots into reality!
+            </p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Shot Manager Preview Queue - XiL08 - V1.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator2"></div>
+            <h4>Viewlayers mixer and shot combinator</h4>
+            <p>
+              Do you need to create combinations? Easily create all possible
+              combinations with our shot combinator and View layer utilities. Mix
+              Cameras with view layers and worlds to create a multiverse of shots
+              in just a few clicks.
+            </p>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Shot Manager Shots Combinator - WEJxy - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+
+            <div class="emptySeparator3"></div>
+
+            
+          </div>
+
+        </div>
+
+
+        <div class="backgroundAlt3">
+          <div class="marginedContainer extraPaddingHeight">
+            <div class="emptySeparator2"></div>
+            <h2 class="centerText accent1">Miscellaneous</h2>
+            <div class="emptySeparator"></div>
+
+            <img
+              src="https://tinquify.com/media/Studioverse 1.0 - Misc Gizmos - ChGMp - V1_Optimized.webp"
+              class="video1"
+              alt=""
+            />
+            <div class="emptySeparator"></div>
+            <h4>Display settings</h4>
+            <p>
+              Give clarity to your viewport. Quickly adjust gizmos that distract
+              your artistic focus.
+            </p>
+            <div class="emptySeparator"></div>
+            <h4>Collections Manager</h4>
+            <p>
+              Manage your view layers much more easily. Turn on and off
+              collections in your viewlayers or copy their whole setup from one to
+              another (this one goes hand in hand with the Shot manager).
+            </p>
+
+            <div class="emptySeparator"></div>
+            <h4>Material recognizer</h4>
+            <p>
+              Quickly know and select the exact material you are looking at
+              (useful for projects that have that have many materials).
+            </p>
+            <div class="emptySeparator2"></div>            
+          </div>
+        </div>
+
+
+        <div class="backgroundAlt2">
+          <div class="marginedContainer extraPaddingHeight">
+
+            <div class="emptySeparator2"></div>
+
+            <h2 class="centerText accent1">You want more?</h2>
+
+            <h4 class="centerText">Combo it with our Proterials!</h4>
+              
+            <div class="emptySeparator"></div>
+
+            <img
+              src="https://tinquify.com/media/Missing file - f850a.jpg"
+              class="video1"
+              alt=""
+            />
+            
+            <div class="emptySeparator2"></div>
+
+            
+          </div>
+
+        </div>
+
+
+        <div class="backgroundAlt2">
+          <div class="marginedContainer extraPaddingHeight">
+              <div class="marginedContainer extraPaddingHeight">
+                <h2 class="centerText accent1">More information</h2>
+
+                <div class="emptySeparator"></div>
+
+                <div class="extraPadding floatCard1">
+                  <h3>Who can benefit from this?</h3>
+                  <p>
+                    Well, <b>anyone who creates 3D content</b>, but especially the
+                    ones who make renderings for different creative fields / design
+                    branches. Some of <b>the most notable professionals</b> that will
+                    take advantage of it <b>are</b>:
+                  </p>
+                  <ul>
+                    <li>Architectural renderers</li>
+                    <li>Product renderers</li>
+                    <li>Industrial designers</li>
+                    <li>Videogame developers</li>
+                    <li>Textile designers</li>
+                    <li>Asset artists</li>
+                    <li>Concept art artists</li>
+                    <li>Texturing artists</li>
+                    <li>Multimedia designers</li>
+                  </ul>
+                </div>
+
+                <div class="emptySeparator"></div>
+
+                <div class="extraPadding floatCard1">
+                  <h3>
+                    What is the difference between the price tags?
+                  </h3>
+                  <p><b>We want to be really sincere with you.</b></p>
+                  <p>
+                    We are a small studio and we know that not everybody has Pixar’s
+                    budget.
+                  </p>
+                  <p>
+                    That is why we decided that
+                    <b
+                      >the best way to offer this product and be fair to everybody is
+                      by splitting it by ranges.</b
+                    >
+                  </p>
+                  <ul>
+                    <li>
+                      Indie
+                      <ul>
+                        <li>
+                          For <b>individuals and small studios</b> with revenue up to
+                          <b>USD25k/year.</b>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Pro
+                      <ul>
+                        <li>
+                          For <b>professionals and studios</b> with revenue between
+                          <b>USD25k/year and USD250k/year, and for 10 seats.</b>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Company
+                      <ul>
+                        <li>
+                          For <b>businesses</b> with revenue between
+                          <b>USD250k/year and USD1M/year, and for 20 seats.</b>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Enterprise
+                      <ul>
+                        <li>
+                          For <b>businesses</b> with revenue exceeding
+                          <b
+                            >USD1M/year, and for 50 seats within a single studio or
+                            division.</b
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <p><b>To be clear:</b></p>
+                  <ul>
+                    <li>
+                      <b>There are no differences</b> either in terms of quality (you
+                      will receive the same product) or in terms of license type for
+                      the different price tiers.
+                    </li>
+                    <li>
+                      <b
+                        >The revenue and seats are meant to be considered as
+                        orientation when deciding.</b
+                      >
+                      <ul>
+                        <li>
+                          The software is not locked by seats, it is just a suggestion
+                          from us to be fair with everybody.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      In short, after your purchase, you will be able to have a
+                      <b>commercial license</b> of the product that has the following
+                      features:
+                      <ul>
+                        <li>Royalty-free</li>
+                        <li>No seats limitation (only suggested)</li>
+                        <li>No time usage limitation</li>
+                        <li>No media reproduction limitation</li>
+                        <li>Access to free updates</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <p>
+                    This is a simplified version of the detailed terms outlined in the
+                    product's license agreement. You can see the license of the
+                    royalty-free assets
+                    <a
+                      href="https://tinquify.com/media/Tinquify%20-%20License%20-%20Digital%20Assets%20-%204ca5f.pdf"
+                      target="_blank"
+                      >here</a
+                    >
+                    and the license that corresponds to the GNU GPL assets
+                    <a
+                      href="https://tinquify.com/media/Tinquify%20-%20License%20-%20Blender%20Assets%20-%200af2a.pdf"
+                      target="_blank"
+                      >here</a
+                    >. Make sure to read them before buying the product.
+                  </p>
+
+                  <!-- Add license links here-->
+
+                  <p>Some cases that could guide you in choosing the tier are:</p>
+                  <ul>
+                    <li>
+                      If you have a <b>mini studio with some friends</b> and you are
+                      all earning less than USD25k in total per year the “Indie” tier
+                      is ok.
+                    </li>
+                    <li>
+                      If you are <b>working for a company</b> and your salary is above
+                      USD25k per year then it would be very kind if you consider
+                      buying the “Pro” tier or maybe buying the “Freelancer” tier more
+                      than once to be supportive.
+                    </li>
+                    <li>
+                      If you are a <b>studio</b> that earns more than USD25k and less
+                      than USD250k per year and has 3-5 employees you should get the
+                      “Pro” tier.
+                    </li>
+                    <li>
+                      If you are a <b>company</b> that earns more than USD250K and
+                      less than USD1M per year and has 50 employees you should get the
+                      “Company” tier and purchase it at least 3 times to cover the
+                      amount of suggested seats.
+                    </li>
+                    <li>
+                      If your <b>company</b> earns more than USD 1M per year, we
+                      recommend choosing the “Enterprise” tier, or contacting us for
+                      guidance on the most suitable option for your organization.
+                    </li>
+                  </ul>
+                  <p>
+                    We hope you understand that, we set the price at the lowest we
+                    believe it can be affordable for those different tiers and fair
+                    for our work/effort.
+                  </p>
+                  <p>
+                    <b>It is a matter of common sense</b> that the people who can
+                    benefit the most from it can support us in the same way they are
+                    getting benefited. If a big company has access to the addon at the
+                    same price a small freelancer does it would be a very unfair
+                    scenario.
+                  </p>
+
+                  <p>
+                    It is worth mentioning that this pack has some options available
+                    for the Indie tier only. These different sub-packs contain
+                    different contents and are not available in the studio or company
+                    tier (which is only offered as the full version).
+                  </p>
+
+                  <br />
+                  <p>
+                    We also have to mention that it would be nice if you consider
+                    purchasing the product again just for the sake of support. That
+                    would be greatly appreciated to keep the project running.
+                  </p>
+                  <br />
+                  <p>
+                    <b
+                      >To sum up, the decision of which "price tag" to choose relies
+                      absolutely upon you, and we decided to trust you!</b
+                    >
+                  </p>
+                </div>
+              </div>
+          </div>
+
+          <div class="emptySeparator2"></div>
+        </div>    
+
+        
+        <div>
+          <div class="marginedContainer extraPaddingHeight">
+
+              
+            <div class="emptySeparator2"></div>
+
+            <h2 class="centerText accent1">Important notes</h2>
+            
+            <div class="emptySeparator"></div>
+
+            <ul>
+              <li>
+                It is not 100% Eeveeproof. In other words, not everything works in
+                Eevee. We can say that 90% of the addon tools work with Eevee.
+                Just some things don’t work because Blender itself does not
+                support them yet. An example is the procedural lights (Areas and
+                spotlights that uses nodes). However you will benefit of many
+                tools anyways, and the lighting can be baked with our HDRI tool
+                (so you can use it in Eevee).
+              </li>
+              <div class="emptySeparator"></div>
+              <li>
+                This addon uses an installation counter per year system. Higher
+                tiers (studios, companies and enterprises) will have more allowed
+                installations per year. This system is to make it fair and avoid
+                higher tiers getting a lower one. You can know more about this in
+                our tiers descriptions and in our license. We thought the count
+                amount and system to be comfortable of use (and even spacious) for
+                the normal behaviour and workflow of the meant user/s.
+              </li>
+              <div class="emptySeparator"></div>
+              <li>
+                Proterials is the pack of materials we used for our renders. It is
+                a design oriented high-quality and customizable set of shaders
+                that complements neatly with Studioverse.
+              </li>
+            </ul>
+
+            <div class="emptySeparator"></div>
+            <p class="centerText">
+              You can check more important notes in our documentation.
+            </p>
+
+            <div class="emptySeparator3"></div>
+
+            <h2 class="centerText accent1">Extras</h2>
+
+            <p>
+              We wanted to give special thanks to the ones who are extraordinary
+              teachers and information sources for developing a product like this
+              and for learning Blender in general. So special thanks to:
+              <b
+                >Erindale, CGMatter, Adan Martin, CG Vertex, and all those Youtube
+                channels who upload a few videos but are right there when you need
+                to!</b
+              >
+              Thank you very much for your effort in teaching.
+            </p>
+
+            <div class="emptySeparator3"></div>
+
+            <h2 class="centerText accent1">Contact</h2>
+
+
+            <div class="centerText">
+              <p>
+                If you have any doubts, please, feel free to contact us at:
+                <a href="mailto:contact@tinquify.com" target="_blank"
+                  >contact@tinquify.com</a
+                >
+              </p>
+              <p>
+                You can check more information about us at
+                <a href="https://allmylinks.com/tinquify" target="_blank"
+                  >allmylinks.com/tinquify</a
+                >
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <img
+          src="https://media.tinquify.com/Studioverse%20-%20v%201.0%20-%20Graphic%20-%20BM%20-%20Footer%20-%200Hy7q.png"
+          width="100%"
+          alt=""
+        />
+    </div>
+  </body>
+</html>
