@@ -28,31 +28,29 @@
         }
 
         .our-products-container {
-            display: flex;
-            gap: 15px;
-            /* Espacio entre las imágenes */
             width: 100%;
-            align-items: center;
+            font-size: 0;
+            /* elimina espacios extra entre inline-block */
         }
 
         .our-products {
-            flex: 1;
-            /* Cada imagen ocupa el mismo ancho */
+            display: inline-block;
+            width: calc(25% - 15px);
+            /* 25% menos margen lateral */
+            margin: 0 7.5px;
+            /* margen mínimo de 10px entre imágenes y con los bordes */
             border-radius: 20px;
             overflow: hidden;
-            position: relative;
-            /* Para aplicar bordes destacados con padding */
+            vertical-align: middle;
+            /* centra en eje vertical */
         }
 
         .our-products img {
             width: 100%;
             height: auto;
-            /* Mantiene proporción */
-            aspect-ratio: 1 / 1;
-            /* Fuerza cuadrado */
-            object-fit: cover;
             display: block;
-            border-radius: 20px;
+            aspect-ratio: 1/1;
+            /* mantiene cuadradas */
         }
 
         .video-responsive {
